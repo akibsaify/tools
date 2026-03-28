@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TDS Calculator — Calculate Tax Deducted at Source | ToolsHub</title>
+  <meta name="description" content="Free TDS calculator for India. Calculate Tax Deducted at Source for salary, interest, rent, professional fees, contractor payments and more. Know TDS rate, amount and net payment instantly.">
+  <meta name="keywords" content="TDS calculator, tax deducted at source, TDS rate, TDS on salary, TDS on rent, 194A, 194C, 194J, 194I, TDS India, Form 26AS">
+  <meta name="author" content="Akib Saify">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/tds-calculator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TDS Calculator — Calculate Tax Deducted at Source | ToolsHub">
+  <meta property="og:description" content="Calculate TDS on salary, interest, rent, professional fees and more. Know the TDS rate, deducted amount and net payment instantly.">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/tds-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ToolsHub">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TDS Calculator — Calculate Tax Deducted at Source | ToolsHub">
+  <meta name="twitter:description" content="Calculate TDS on salary, interest, rent, professional fees and more. Know your TDS rate and net payment instantly.">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZSH9HJTRGT');
+  </script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "TDS Calculator India",
+    "url": "https://tools.0110059.xyz/tools/tds-calculator.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "description": "Free TDS calculator for India. Calculate Tax Deducted at Source for salary, interest, rent, professional fees, contractor payments and more."
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is TDS and who is responsible for deducting it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TDS stands for Tax Deducted at Source. It is a mechanism where the payer (deductor) deducts a certain percentage of tax before making a payment to the payee (deductee). The deductor is responsible for deducting TDS at the prescribed rate and depositing it with the government. Employers deduct TDS on salary, banks deduct TDS on interest, and businesses deduct TDS on rent, professional fees and contractor payments."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if PAN is not provided to the deductor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If the payee does not furnish their PAN to the deductor, TDS is deducted at a higher rate of 20% or the applicable rate, whichever is higher, as per Section 206AA of the Income Tax Act. This is significantly higher than the normal TDS rates which range from 1% to 10% for most payment types. Always provide your PAN to avoid excess TDS deduction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Form 26AS and how does it relate to TDS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Form 26AS is your Annual Tax Statement that contains details of all TDS deducted against your PAN during a financial year. It shows TDS deducted by employers, banks, and other deductors, along with advance tax and self-assessment tax paid. You can view Form 26AS on the TRACES portal or through the income tax e-filing website. It is essential to verify Form 26AS before filing your income tax return to ensure all TDS credits are correctly reflected."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I claim a refund if excess TDS has been deducted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, if your total TDS deducted during the year exceeds your actual tax liability, you can claim a refund by filing your income tax return. The excess amount will be refunded to your bank account after the return is processed by the Income Tax Department. You can also submit Form 15G (for individuals below 60) or Form 15H (for senior citizens) to your bank to avoid TDS on interest if your total income is below the taxable limit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the TDS threshold limit for interest on fixed deposits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Banks deduct TDS on interest from fixed deposits under Section 194A at 10% when the total interest earned in a financial year exceeds Rs 40,000 for individuals below 60 years and Rs 50,000 for senior citizens aged 60 and above. If total interest is below these thresholds, no TDS is deducted. You can submit Form 15G or 15H to avoid TDS if your total income is below the taxable limit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is TDS required to be deposited with the government?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TDS deducted during a month must be deposited with the government by the 7th of the following month. For example, TDS deducted in January must be deposited by 7th February. For the month of March, the due date is 30th April. The deductor must also file quarterly TDS returns in Form 24Q (salary) or 26Q (non-salary) by the prescribed due dates, which are 31st July, 31st October, 31st January and 31st May for Q1 to Q4 respectively."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tools.0110059.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://tools.0110059.xyz/tools/" },
+      { "@type": "ListItem", "position": 3, "name": "TDS Calculator", "item": "https://tools.0110059.xyz/tools/tds-calculator.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    .result-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-top:16px; }
+    @media (max-width:600px) { .result-grid { grid-template-columns:1fr; } }
+    .result-card { border-radius:var(--radius, 8px); padding:20px; border:2px solid var(--border, #e5e7eb); text-align:center; }
+    .result-card.highlight { border-color:#2563eb; background:rgba(37,99,235,0.04); }
+    .result-card h3 { margin:0 0 8px; font-size:0.9rem; color:var(--text-secondary, #6b7280); font-weight:600; text-transform:uppercase; letter-spacing:0.5px; }
+    .result-card .value { font-size:1.5rem; font-weight:700; color:var(--text-primary, #111); }
+    .result-card .sub { font-size:0.85rem; color:var(--text-secondary, #6b7280); margin-top:4px; }
+    .tds-rates-table { width:100%; border-collapse:collapse; margin:12px 0; font-size:0.92rem; }
+    .tds-rates-table th, .tds-rates-table td { padding:10px 12px; text-align:left; border-bottom:1px solid var(--border, #e5e7eb); }
+    .tds-rates-table th { background:var(--bg-secondary, #f8f9fa); font-weight:600; }
+    .tds-rates-table tr:last-child td { border-bottom:none; }
+    .section-badge { display:inline-block; background:var(--bg-secondary, #f8f9fa); color:var(--text-primary, #111); font-size:0.8rem; font-weight:600; padding:2px 8px; border-radius:4px; }
+    .no-pan-warning { margin-top:8px; padding:12px 16px; border-radius:var(--radius, 8px); background:#fef3c7; color:#92400e; font-size:0.9rem; display:none; }
+    .input-note { font-size:0.82rem; color:var(--text-secondary, #6b7280); margin-top:2px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; TDS Calculator
+    </nav>
+
+    <!-- Heading -->
+    <h1 style="font-size:1.6rem; font-weight:700; margin-top:20px;">TDS Calculator &mdash; Calculate Tax Deducted at Source</h1>
+    <p class="last-updated" style="color:var(--text-secondary); margin-bottom:4px;">Calculate TDS on salary, interest, rent, professional fees and contractor payments for India.</p>
+    <p class="last-updated">Last updated: March 2026</p>
+
+    <!-- Tool Box -->
+    <div class="tool-box">
+
+      <!-- Payment Type -->
+      <div class="form-group">
+        <label for="paymentType">Payment Type (Section)</label>
+        <select id="paymentType" style="min-height:44px; width:100%; padding:10px 12px; border:1px solid var(--border, #e5e7eb); border-radius:var(--radius, 8px); font-size:1rem; background:var(--bg, #fff);">
+          <option value="192">Salary (Section 192)</option>
+          <option value="193">Interest on Securities (Section 193)</option>
+          <option value="194">Dividends (Section 194)</option>
+          <option value="194A" selected>Interest other than Securities (Section 194A)</option>
+          <option value="194C_ind">Contractor Payment — Individual/HUF (Section 194C)</option>
+          <option value="194C_other">Contractor Payment — Others (Section 194C)</option>
+          <option value="194H">Commission / Brokerage (Section 194H)</option>
+          <option value="194I">Rent (Section 194I)</option>
+          <option value="194J">Professional / Technical Fees (Section 194J)</option>
+          <option value="194LA">Compensation on land acquisition (Section 194LA)</option>
+          <option value="194DA">Life Insurance payout (Section 194DA)</option>
+        </select>
+      </div>
+
+      <!-- Payment Amount -->
+      <div class="form-group">
+        <label for="paymentAmount">Payment Amount</label>
+        <div class="input-prefix">
+          <input type="number" id="paymentAmount" value="100000" min="0" max="999999999" step="1000" inputmode="numeric">
+        </div>
+        <p class="input-note">Enter the gross payment amount in rupees</p>
+      </div>
+
+      <!-- PAN Available -->
+      <div class="form-group">
+        <label for="panAvailable">PAN Available?</label>
+        <select id="panAvailable" style="min-height:44px; width:100%; padding:10px 12px; border:1px solid var(--border, #e5e7eb); border-radius:var(--radius, 8px); font-size:1rem; background:var(--bg, #fff);">
+          <option value="yes">Yes — PAN furnished</option>
+          <option value="no">No — PAN not furnished</option>
+        </select>
+        <div class="no-pan-warning" id="noPanWarning">Without PAN, TDS is deducted at 20% or the applicable rate, whichever is higher (Section 206AA).</div>
+      </div>
+
+      <!-- Calculate Button -->
+      <button type="button" id="calculateBtn" class="btn-primary" style="min-height:44px; width:100%; font-size:1rem; font-weight:600; cursor:pointer; border:none; border-radius:var(--radius, 8px); padding:12px 24px; background:var(--primary, #2563eb); color:#fff;">Calculate TDS</button>
+
+      <!-- Results -->
+      <div id="resultBox" style="display:none;">
+        <div class="result-grid">
+          <div class="result-card highlight">
+            <h3>TDS Amount</h3>
+            <div class="value" id="tdsAmount">--</div>
+            <div class="sub" id="tdsSection">Section --</div>
+          </div>
+          <div class="result-card">
+            <h3>TDS Rate</h3>
+            <div class="value" id="tdsRate">--%</div>
+            <div class="sub" id="tdsRateNote">Applied rate</div>
+          </div>
+          <div class="result-card">
+            <h3>Net Payment</h3>
+            <div class="value" id="netPayment">--</div>
+            <div class="sub">Amount after TDS</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End Tool Box -->
+
+    <!-- Content Section: How to Use -->
+    <section class="content-section" style="margin-top:40px;">
+      <h2>How to Use This TDS Calculator</h2>
+      <p>Using the ToolsHub TDS Calculator is straightforward. Follow these steps to find out how much TDS will be deducted from your payment:</p>
+      <ol>
+        <li><strong>Select the Payment Type:</strong> Choose the nature of payment from the dropdown. Each option corresponds to a specific section of the Income Tax Act (e.g., Section 194A for interest, Section 194J for professional fees).</li>
+        <li><strong>Enter the Payment Amount:</strong> Type the gross payment amount in Indian rupees. This is the total amount before any TDS deduction.</li>
+        <li><strong>PAN Availability:</strong> Indicate whether the payee has furnished their Permanent Account Number (PAN). If PAN is not available, TDS is deducted at a higher rate of 20% under Section 206AA.</li>
+        <li><strong>View Results:</strong> The calculator instantly shows the TDS amount, applicable TDS rate and the net payment the payee will receive after deduction.</li>
+      </ol>
+      <p>The calculator auto-computes results whenever you change any input, so you can quickly compare TDS across different payment types and amounts.</p>
+    </section>
+
+    <!-- TDS Rates Table -->
+    <section class="content-section">
+      <h2>TDS Rates for FY 2025-26 (AY 2026-27)</h2>
+      <p>The following table lists the commonly applicable TDS rates under the Income Tax Act. These rates apply when the payee has furnished a valid PAN. Without PAN, TDS is deducted at 20% or the rate in the table, whichever is higher.</p>
+      <div style="overflow-x:auto;">
+        <table class="tds-rates-table">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Nature of Payment</th>
+              <th>TDS Rate</th>
+              <th>Threshold (Rs)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="section-badge">192</span></td><td>Salary</td><td>Slab rate</td><td>Basic exemption limit</td></tr>
+            <tr><td><span class="section-badge">193</span></td><td>Interest on Securities</td><td>10%</td><td>10,000</td></tr>
+            <tr><td><span class="section-badge">194</span></td><td>Dividends</td><td>10%</td><td>5,000</td></tr>
+            <tr><td><span class="section-badge">194A</span></td><td>Interest other than Securities</td><td>10%</td><td>40,000 / 50,000*</td></tr>
+            <tr><td><span class="section-badge">194C</span></td><td>Contractor — Individual/HUF</td><td>1%</td><td>30,000 single / 1,00,000 aggregate</td></tr>
+            <tr><td><span class="section-badge">194C</span></td><td>Contractor — Others</td><td>2%</td><td>30,000 single / 1,00,000 aggregate</td></tr>
+            <tr><td><span class="section-badge">194H</span></td><td>Commission / Brokerage</td><td>5%</td><td>15,000</td></tr>
+            <tr><td><span class="section-badge">194I</span></td><td>Rent</td><td>10%</td><td>2,40,000</td></tr>
+            <tr><td><span class="section-badge">194J</span></td><td>Professional / Technical Fees</td><td>10%</td><td>30,000</td></tr>
+            <tr><td><span class="section-badge">194LA</span></td><td>Compensation on land acquisition</td><td>10%</td><td>2,50,000</td></tr>
+            <tr><td><span class="section-badge">194DA</span></td><td>Life Insurance payout</td><td>5%</td><td>1,00,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem; color:var(--text-secondary, #6b7280);">*For senior citizens (60+), the threshold under Section 194A is Rs 50,000. For salary (Section 192), TDS is deducted at the applicable income tax slab rates.</p>
+    </section>
+
+    <!-- When is TDS Deducted -->
+    <section class="content-section">
+      <h2>When Is TDS Deducted?</h2>
+      <p>TDS is deducted at the time of making a payment or at the time of crediting the amount to the payee's account, whichever is earlier. The key scenarios where TDS applies include:</p>
+      <ul>
+        <li><strong>Salary payments:</strong> Your employer deducts TDS every month based on your estimated annual income and applicable tax slab under Section 192.</li>
+        <li><strong>Bank interest:</strong> Banks deduct TDS at 10% on interest from fixed deposits, recurring deposits and other deposits when total interest exceeds Rs 40,000 (Rs 50,000 for senior citizens) in a financial year under Section 194A.</li>
+        <li><strong>Rent payments:</strong> If annual rent exceeds Rs 2,40,000, the payer must deduct TDS at 10% under Section 194I.</li>
+        <li><strong>Professional and technical services:</strong> Payments exceeding Rs 30,000 to professionals or for technical services attract 10% TDS under Section 194J.</li>
+        <li><strong>Contractor payments:</strong> Payments to contractors attract TDS at 1% for individuals/HUFs and 2% for companies and firms under Section 194C, provided single payment exceeds Rs 30,000 or aggregate exceeds Rs 1,00,000 during the year.</li>
+        <li><strong>Commission and brokerage:</strong> TDS at 5% applies under Section 194H when payment exceeds Rs 15,000 in a year.</li>
+      </ul>
+      <p>Individuals and HUFs who are not subject to tax audit are generally not required to deduct TDS (except on rent under Section 194-IB). Entities like companies, firms and government bodies are always required to deduct TDS.</p>
+    </section>
+
+    <!-- How to File TDS Return -->
+    <section class="content-section">
+      <h2>How to File a TDS Return</h2>
+      <p>Deductors must file quarterly TDS returns with the Income Tax Department. Here is the process:</p>
+      <ol>
+        <li><strong>Obtain TAN:</strong> Every deductor must have a Tax Deduction and Collection Account Number (TAN). Apply for TAN using Form 49B on the NSDL/UTIITSL website.</li>
+        <li><strong>Deduct TDS:</strong> Deduct TDS at the prescribed rate at the time of payment or credit, whichever is earlier.</li>
+        <li><strong>Deposit TDS:</strong> Deposit the deducted TDS to the government using Challan No. 281 by the 7th of the following month (30th April for March).</li>
+        <li><strong>File Quarterly Return:</strong> File TDS returns in Form 24Q for salary or Form 26Q for non-salary payments. The due dates are 31st July (Q1), 31st October (Q2), 31st January (Q3) and 31st May (Q4).</li>
+        <li><strong>Issue TDS Certificate:</strong> Provide Form 16 (salary) or Form 16A (non-salary) to the deductee within the prescribed time, so they can claim TDS credit while filing their income tax return.</li>
+      </ol>
+      <p>TDS returns can be filed online through the TRACES portal or using authorised software like Saral TDS, Gen TDS, or e-TDS RPU provided by NSDL.</p>
+    </section>
+
+    <!-- Form 26AS -->
+    <section class="content-section">
+      <h2>Understanding Form 26AS</h2>
+      <p>Form 26AS is your consolidated Annual Tax Statement maintained by the Income Tax Department. It acts as a passbook of all taxes deducted and deposited against your PAN. The statement includes:</p>
+      <ul>
+        <li><strong>Part A:</strong> Details of TDS deducted by all deductors (employers, banks, clients, tenants).</li>
+        <li><strong>Part B:</strong> Details of tax collected at source (TCS).</li>
+        <li><strong>Part C:</strong> Advance tax and self-assessment tax paid by you.</li>
+        <li><strong>Part D:</strong> Refunds received during the financial year.</li>
+        <li><strong>Part F:</strong> Details of specified financial transactions (SFT) reported by mutual funds, registrars and other entities.</li>
+      </ul>
+      <p>You can view Form 26AS by logging into the income tax e-filing portal at incometax.gov.in or through the TRACES website. Always verify that TDS reflected in Form 26AS matches the amounts deducted from your payments before filing your income tax return. If there is a mismatch, contact the deductor and ask them to file a correction return.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What is TDS and who is responsible for deducting it?</summary>
+        <p>TDS stands for Tax Deducted at Source. It is a system where the payer deducts a portion of the payment as tax before transferring the balance to the payee. The payer (deductor) is legally responsible for deducting TDS at the correct rate, depositing it with the government and filing quarterly TDS returns. Employers, banks, businesses and government entities are common deductors.</p>
+      </details>
+
+      <details>
+        <summary>What happens if PAN is not provided to the deductor?</summary>
+        <p>Under Section 206AA, if the payee does not furnish their PAN, TDS must be deducted at the higher of 20% or the rate specified in the relevant section. This means your TDS could be significantly higher than normal. Always provide your PAN to the deductor to ensure TDS is deducted at the correct lower rate.</p>
+      </details>
+
+      <details>
+        <summary>What is Form 26AS and how does it relate to TDS?</summary>
+        <p>Form 26AS is your Annual Tax Statement that consolidates all TDS deducted against your PAN, taxes paid and financial transactions. It is available on the income tax e-filing portal and the TRACES website. You should verify it before filing your return to ensure all TDS credits are correctly reflected.</p>
+      </details>
+
+      <details>
+        <summary>Can I claim a refund if excess TDS has been deducted?</summary>
+        <p>Yes. If total TDS deducted exceeds your actual tax liability for the year, you can claim a refund by filing your income tax return. The refund is processed and credited to your bank account. To avoid excess TDS in the first place, you can submit Form 15G (below 60 years) or Form 15H (senior citizens) to banks if your total income is below the taxable limit.</p>
+      </details>
+
+      <details>
+        <summary>What is the TDS threshold for fixed deposit interest?</summary>
+        <p>Under Section 194A, banks deduct TDS at 10% on interest from deposits when total interest exceeds Rs 40,000 in a financial year (Rs 50,000 for senior citizens aged 60 and above). If interest earned is below this threshold, no TDS is deducted.</p>
+      </details>
+
+      <details>
+        <summary>When must TDS be deposited with the government?</summary>
+        <p>TDS deducted during a month must be deposited by the 7th of the next month using Challan No. 281. For March, the due date is 30th April. Late deposit attracts interest at 1.5% per month. The deductor must also file quarterly returns in Form 24Q (salary) or 26Q (non-salary).</p>
+      </details>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin-top:12px;">
+        <a href="/tools/income-tax-calculator.html" class="btn-secondary" style="text-align:center; padding:14px 16px; min-height:44px; text-decoration:none; border-radius:var(--radius, 8px); border:1px solid var(--border, #e5e7eb); display:flex; align-items:center; justify-content:center;">Income Tax Calculator</a>
+        <a href="/tools/fd-calculator.html" class="btn-secondary" style="text-align:center; padding:14px 16px; min-height:44px; text-decoration:none; border-radius:var(--radius, 8px); border:1px solid var(--border, #e5e7eb); display:flex; align-items:center; justify-content:center;">FD Calculator</a>
+        <a href="/tools/gst-calculator.html" class="btn-secondary" style="text-align:center; padding:14px 16px; min-height:44px; text-decoration:none; border-radius:var(--radius, 8px); border:1px solid var(--border, #e5e7eb); display:flex; align-items:center; justify-content:center;">GST Calculator</a>
+        <a href="/tools/emi-calculator.html" class="btn-secondary" style="text-align:center; padding:14px 16px; min-height:44px; text-decoration:none; border-radius:var(--radius, 8px); border:1px solid var(--border, #e5e7eb); display:flex; align-items:center; justify-content:center;">EMI Calculator</a>
+      </div>
+    </section>
+
+  </div>
+  <!-- End Container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="footerYear"></span> ToolsHub. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a>.</p>
+  </footer>
+
+  <script src="/assets/js/utils.js"></script>
+  <script>
+    (function() {
+      // Footer year
+      document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+      // Elements
+      var paymentTypeSelect = document.getElementById('paymentType');
+      var paymentAmountInput = document.getElementById('paymentAmount');
+      var panSelect = document.getElementById('panAvailable');
+      var noPanWarning = document.getElementById('noPanWarning');
+      var resultBox = document.getElementById('resultBox');
+      var calculateBtn = document.getElementById('calculateBtn');
+
+      // TDS rate data: { rate, sectionLabel, threshold }
+      var tdsData = {
+        '192':       { rate: 0,    sectionLabel: 'Section 192 — Salary',                        threshold: 0,      note: 'TDS on salary is deducted at applicable income tax slab rates by your employer.' },
+        '193':       { rate: 10,   sectionLabel: 'Section 193 — Interest on Securities',         threshold: 10000,  note: '' },
+        '194':       { rate: 10,   sectionLabel: 'Section 194 — Dividends',                      threshold: 5000,   note: '' },
+        '194A':      { rate: 10,   sectionLabel: 'Section 194A — Interest (other than Securities)', threshold: 40000, note: 'Threshold is Rs 50,000 for senior citizens.' },
+        '194C_ind':  { rate: 1,    sectionLabel: 'Section 194C — Contractor (Individual/HUF)',    threshold: 30000,  note: 'Also applies if aggregate exceeds Rs 1,00,000 during the year.' },
+        '194C_other':{ rate: 2,    sectionLabel: 'Section 194C — Contractor (Others)',            threshold: 30000,  note: 'Also applies if aggregate exceeds Rs 1,00,000 during the year.' },
+        '194H':      { rate: 5,    sectionLabel: 'Section 194H — Commission / Brokerage',        threshold: 15000,  note: '' },
+        '194I':      { rate: 10,   sectionLabel: 'Section 194I — Rent',                          threshold: 240000, note: '' },
+        '194J':      { rate: 10,   sectionLabel: 'Section 194J — Professional / Technical Fees', threshold: 30000,  note: '' },
+        '194LA':     { rate: 10,   sectionLabel: 'Section 194LA — Compensation on land acquisition', threshold: 250000, note: '' },
+        '194DA':     { rate: 5,    sectionLabel: 'Section 194DA — Life Insurance payout',        threshold: 100000, note: '' }
+      };
+
+      function compute() {
+        var type = paymentTypeSelect.value;
+        var amount = parseFloat(paymentAmountInput.value) || 0;
+        var hasPan = panSelect.value === 'yes';
+        var data = tdsData[type];
+
+        // Show/hide no-PAN warning
+        noPanWarning.style.display = hasPan ? 'none' : 'block';
+
+        // Determine effective rate
+        var effectiveRate = data.rate;
+
+        // For salary (192), use a flat 10% as an estimate when PAN is available
+        if (type === '192') {
+          effectiveRate = 10; // estimated average rate for salary
+        }
+
+        // If no PAN, use 20% or applicable rate, whichever is higher
+        if (!hasPan) {
+          effectiveRate = Math.max(effectiveRate, 20);
+        }
+
+        var tdsAmount = Math.round(amount * effectiveRate / 100);
+        var netPayment = amount - tdsAmount;
+
+        // Display
+        document.getElementById('tdsAmount').textContent = typeof formatINR === 'function' ? formatINR(tdsAmount) : '\u20B9' + tdsAmount.toLocaleString('en-IN');
+        document.getElementById('tdsRate').textContent = effectiveRate + '%';
+        document.getElementById('netPayment').textContent = typeof formatINR === 'function' ? formatINR(netPayment) : '\u20B9' + netPayment.toLocaleString('en-IN');
+
+        // Section label
+        var sectionNote = data.sectionLabel;
+        if (type === '192') {
+          sectionNote += ' (estimated average)';
+        }
+        if (!hasPan) {
+          sectionNote += ' — Higher rate (no PAN)';
+        }
+        document.getElementById('tdsSection').textContent = sectionNote;
+
+        // Rate note
+        var rateNote = 'Applied rate';
+        if (data.note) {
+          rateNote = data.note;
+        }
+        if (!hasPan) {
+          rateNote = 'Higher rate under Section 206AA (no PAN)';
+        }
+        document.getElementById('tdsRateNote').textContent = rateNote;
+
+        resultBox.style.display = '';
+
+        // GA4 event
+        if (typeof gtag === 'function') {
+          gtag('event', 'calculate_tds', {
+            payment_type: type,
+            payment_amount: amount,
+            pan_available: hasPan,
+            tds_rate: effectiveRate,
+            tds_amount: tdsAmount
+          });
+        }
+      }
+
+      var debouncedCalc = typeof debounce === 'function' ? debounce(compute, 300) : compute;
+
+      // Attach listeners
+      paymentTypeSelect.addEventListener('change', debouncedCalc);
+      paymentAmountInput.addEventListener('input', debouncedCalc);
+      panSelect.addEventListener('change', debouncedCalc);
+      calculateBtn.addEventListener('click', compute);
+
+      // Calculate on page load
+      compute();
+    })();
+  </script>
+</body>
+</html>

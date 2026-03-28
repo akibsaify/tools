@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator — Check Your Body Mass Index Instantly | ToolsHub</title>
+  <meta name="description" content="Free online BMI calculator to check your Body Mass Index. See your BMI category, healthy weight range, and color-coded BMI gauge. Includes Asian/Indian BMI cutoffs recommended by WHO.">
+  <meta name="keywords" content="bmi calculator, body mass index, bmi check, bmi for indians, healthy weight, bmi categories, overweight, obese, underweight, bmi formula, bmi scale">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/bmi-calculator.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BMI Calculator — Check Your Body Mass Index Instantly | ToolsHub">
+  <meta property="og:description" content="Free online BMI calculator. See your BMI value, category, color-coded gauge, and healthy weight range. Includes WHO-recommended Asian BMI cutoffs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/bmi-calculator.html">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="ToolsHub">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BMI Calculator — Check Your Body Mass Index | ToolsHub">
+  <meta name="twitter:description" content="Free BMI calculator with color-coded gauge, BMI categories, and healthy weight range. Includes Asian/Indian BMI cutoffs.">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ZSH9HJTRGT');</script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "BMI Calculator",
+    "url": "https://tools.0110059.xyz/tools/bmi-calculator.html",
+    "description": "Free online BMI calculator to check your Body Mass Index. Shows BMI value, category, visual gauge, and healthy weight range.",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Akib Saify",
+      "url": "https://0110059.xyz"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is BMI and how is it calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI (Body Mass Index) is a numerical value calculated from your weight and height. The formula is BMI = weight in kilograms divided by height in meters squared. For example, a person weighing 70 kg with a height of 170 cm (1.7 m) has a BMI of 70 / (1.7 x 1.7) = 24.22. It is a widely used screening tool to categorize individuals as underweight, normal weight, overweight, or obese."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is BMI an accurate measure of health?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI is a useful screening tool but not a definitive measure of health. It does not distinguish between muscle mass and fat mass, so a muscular athlete may have a high BMI despite being healthy. It also does not account for fat distribution, bone density, age, or gender. For a complete health assessment, BMI should be used alongside other measurements like waist circumference, body fat percentage, and blood tests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the recommended BMI cutoffs for Indian body types?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The WHO recommends lower BMI cutoffs for Asian populations, including Indians. For Asians, overweight is defined as BMI 23 or above (instead of 25), and obesity starts at BMI 25 or above (instead of 30). This is because South Asians tend to have higher body fat percentages and greater risk of metabolic diseases like diabetes and heart disease at lower BMI values compared to Western populations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a healthy BMI range?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "According to the standard WHO classification, a healthy BMI range is 18.5 to 24.9. For Asian and Indian populations, a healthy BMI range of 18.5 to 22.9 is often recommended due to the higher metabolic risk at lower BMI values. Maintaining a BMI within the healthy range reduces the risk of conditions like type 2 diabetes, cardiovascular disease, and certain cancers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between BMI and body fat percentage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI is a ratio of weight to height and does not directly measure body fat. Body fat percentage measures the actual proportion of fat in your body. Two people can have the same BMI but very different body fat percentages — for example, a bodybuilder and a sedentary person. Body fat percentage is typically measured using tools like DEXA scans, bioelectrical impedance scales, or skinfold calipers, and it gives a more accurate picture of body composition than BMI alone."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the limitations of BMI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BMI has several limitations: it does not differentiate between muscle and fat mass, does not account for fat distribution (visceral vs. subcutaneous fat), ignores age and gender differences in body composition, and may overestimate body fat in athletes or muscular individuals. It also may underestimate risk in people with normal BMI but high body fat (sometimes called 'skinny fat'). Despite these limitations, BMI remains a useful population-level screening tool when used alongside other health indicators."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tools.0110059.xyz/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://tools.0110059.xyz/tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "BMI Calculator",
+        "item": "https://tools.0110059.xyz/tools/bmi-calculator.html"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .bmi-value { font-size: 3.5rem; font-weight: 800; line-height: 1.1; text-align: center; margin: 16px 0 4px; }
+    .bmi-category { font-size: 1.2rem; font-weight: 600; text-align: center; margin-bottom: 16px; }
+    .bmi-gauge { position: relative; height: 28px; border-radius: 14px; overflow: hidden; margin: 20px 0 8px; background: linear-gradient(to right, #3b82f6 0%, #22c55e 22%, #22c55e 40%, #eab308 50%, #f97316 62%, #ef4444 75%, #991b1b 100%); }
+    .bmi-gauge-marker { position: absolute; top: -4px; width: 4px; height: 36px; background: var(--text); border-radius: 2px; transform: translateX(-50%); transition: left 0.4s ease; box-shadow: 0 0 0 2px var(--bg); }
+    .bmi-gauge-labels { display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--text-muted); padding: 0 2px; }
+    .bmi-info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .bmi-info-card { background: var(--bg-secondary); border-radius: var(--radius); padding: 16px; text-align: center; }
+    .bmi-info-card .val { font-size: 1.3rem; font-weight: 700; color: var(--text); }
+    .bmi-info-card .lbl { font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; }
+    .bmi-table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    .bmi-table th, .bmi-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+    .bmi-table th { background: var(--bg-secondary); font-weight: 600; }
+    .bmi-table tr:last-child td { border-bottom: none; }
+    .bmi-dot { display: inline-block; width: 12px; height: 12px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+    .radio-group { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px; }
+    .radio-group label { display: flex; align-items: center; gap: 6px; cursor: pointer; min-height: 44px; padding: 8px 16px; background: var(--bg-secondary); border-radius: var(--radius); border: 1px solid var(--border); font-size: 0.95rem; }
+    .radio-group input[type="radio"] { width: 18px; height: 18px; accent-color: var(--primary); }
+    .formula-box { background: var(--bg-secondary); border-radius: var(--radius); padding: 20px; text-align: center; font-size: 1.1rem; margin: 12px 0; }
+    .formula-box strong { font-size: 1.2rem; }
+    .note-box { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 16px 20px; border-radius: 0 var(--radius) var(--radius) 0; margin: 16px 0; color: #92400e; }
+    @media (prefers-color-scheme: dark) {
+      .note-box { background: #422006; border-left-color: #f59e0b; color: #fde68a; }
+    }
+    .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 12px; }
+    .related-card { display: block; background: var(--bg-secondary); border-radius: var(--radius); padding: 16px 20px; text-decoration: none; color: var(--text); font-weight: 600; text-align: center; border: 1px solid var(--border); transition: border-color 0.2s; min-height: 44px; display: flex; align-items: center; justify-content: center; }
+    .related-card:hover { border-color: var(--primary); color: var(--primary); }
+    @media (max-width: 480px) {
+      .bmi-value { font-size: 2.8rem; }
+      .bmi-info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; BMI Calculator
+    </nav>
+
+    <!-- Page Title -->
+    <section class="content-section" style="margin-top:20px">
+      <h1 style="font-size:1.5rem;font-weight:700;line-height:1.3">BMI Calculator &mdash; Check Your Body Mass Index</h1>
+      <p>Use this free BMI calculator to quickly determine your Body Mass Index based on your weight and height. The tool instantly shows your BMI value, category, a color-coded visual gauge, and the healthy weight range for your height. It also highlights the WHO-recommended Asian and Indian BMI cutoffs, which differ from the standard Western thresholds due to differences in body composition and metabolic risk.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </section>
+
+    <!-- Calculator Tool Box -->
+    <div class="tool-box">
+
+      <!-- Weight -->
+      <div class="form-group">
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" value="70" min="20" max="200" step="0.1" style="min-height:44px;font-size:1rem;width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)">
+      </div>
+
+      <!-- Height -->
+      <div class="form-group">
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" value="170" min="100" max="250" step="0.1" style="min-height:44px;font-size:1rem;width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)">
+      </div>
+
+      <!-- Age (optional) -->
+      <div class="form-group">
+        <label for="age">Age (optional)</label>
+        <input type="number" id="age" placeholder="e.g. 30" min="2" max="120" step="1" style="min-height:44px;font-size:1rem;width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text)">
+      </div>
+
+      <!-- Gender (optional) -->
+      <div class="form-group">
+        <label>Gender (optional)</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+        </div>
+      </div>
+
+      <!-- Calculate Button -->
+      <button class="btn-calculate" id="calcBtn" type="button">Calculate BMI</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result-box" id="resultBox" style="display:none">
+      <div class="result-label">Your BMI</div>
+      <div class="bmi-value" id="bmiValue">--</div>
+      <div class="bmi-category" id="bmiCategory">--</div>
+
+      <!-- Visual Gauge -->
+      <div class="bmi-gauge" role="img" aria-label="BMI scale gauge">
+        <div class="bmi-gauge-marker" id="bmiMarker" style="left:0%"></div>
+      </div>
+      <div class="bmi-gauge-labels">
+        <span>15</span>
+        <span>18.5</span>
+        <span>25</span>
+        <span>30</span>
+        <span>35</span>
+        <span>40+</span>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="bmi-info-grid">
+        <div class="bmi-info-card">
+          <div class="val" id="healthyLow">--</div>
+          <div class="lbl">Healthy Weight (Low)</div>
+        </div>
+        <div class="bmi-info-card">
+          <div class="val" id="healthyHigh">--</div>
+          <div class="lbl">Healthy Weight (High)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This BMI Calculator</h2>
+      <ol>
+        <li><strong>Enter your weight</strong> &mdash; type your body weight in kilograms. The default value is 70 kg. You can enter any value between 20 kg and 200 kg.</li>
+        <li><strong>Enter your height</strong> &mdash; type your height in centimeters. The default value is 170 cm. The accepted range is 100 cm to 250 cm.</li>
+        <li><strong>Optionally add your age and gender</strong> &mdash; while BMI is calculated using only weight and height, providing your age and gender can help you better interpret the results in context. These fields are entirely optional.</li>
+        <li><strong>View your results</strong> &mdash; the calculator instantly shows your BMI number (color-coded by category), the BMI category you fall into, a visual gauge showing where you sit on the BMI scale, and the healthy weight range for your height. Results auto-calculate on page load and update in real time as you change inputs.</li>
+      </ol>
+    </section>
+
+    <!-- BMI Formula -->
+    <section class="content-section">
+      <h2>BMI Formula &amp; Example Calculation</h2>
+      <p>BMI (Body Mass Index) is calculated using a simple formula that relates your weight to the square of your height:</p>
+      <div class="formula-box">
+        <strong>BMI = Weight (kg) &divide; Height (m)&sup2;</strong>
+      </div>
+      <p><strong>Example:</strong> A person weighing 70 kg with a height of 170 cm (1.70 m) would have a BMI calculated as follows:</p>
+      <div class="formula-box">
+        BMI = 70 &divide; (1.70 &times; 1.70) = 70 &divide; 2.89 = <strong>24.22</strong>
+      </div>
+      <p>A BMI of 24.22 falls within the &ldquo;Normal weight&rdquo; category according to the standard WHO classification (18.5 to 24.9). However, under the Asian/Indian cutoffs recommended by WHO, this would be considered &ldquo;Overweight&rdquo; since the threshold is lowered to 23 for Asian populations.</p>
+    </section>
+
+    <!-- BMI Categories Table -->
+    <section class="content-section">
+      <h2>BMI Categories &amp; Health Risks</h2>
+      <p>The World Health Organization (WHO) classifies BMI into the following categories. Each range carries different levels of health risk:</p>
+      <table class="bmi-table">
+        <thead>
+          <tr>
+            <th>BMI Range</th>
+            <th>Category</th>
+            <th>Health Risk</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Below 18.5</td>
+            <td><span class="bmi-dot" style="background:#3b82f6"></span>Underweight</td>
+            <td>Nutritional deficiency, weakened immunity, bone loss</td>
+          </tr>
+          <tr>
+            <td>18.5 &ndash; 24.9</td>
+            <td><span class="bmi-dot" style="background:#22c55e"></span>Normal weight</td>
+            <td>Lowest risk; maintain through balanced diet and exercise</td>
+          </tr>
+          <tr>
+            <td>25.0 &ndash; 29.9</td>
+            <td><span class="bmi-dot" style="background:#eab308"></span>Overweight</td>
+            <td>Increased risk of heart disease, high blood pressure, type 2 diabetes</td>
+          </tr>
+          <tr>
+            <td>30.0 &ndash; 34.9</td>
+            <td><span class="bmi-dot" style="background:#f97316"></span>Obese Class I</td>
+            <td>High risk of cardiovascular disease, diabetes, sleep apnea</td>
+          </tr>
+          <tr>
+            <td>35.0 &ndash; 39.9</td>
+            <td><span class="bmi-dot" style="background:#ef4444"></span>Obese Class II</td>
+            <td>Very high risk; significant impact on mobility and quality of life</td>
+          </tr>
+          <tr>
+            <td>40.0 and above</td>
+            <td><span class="bmi-dot" style="background:#991b1b"></span>Obese Class III</td>
+            <td>Extremely high risk; severe health complications likely</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Asian/Indian BMI Note -->
+    <section class="content-section">
+      <h2>Asian &amp; Indian BMI Cutoffs</h2>
+      <div class="note-box">
+        <strong>Important for Indian and South Asian users:</strong> The WHO recommends lower BMI cutoffs for Asian populations. For Asians, &ldquo;Overweight&rdquo; begins at a BMI of 23 (not 25), and &ldquo;Obese&rdquo; begins at 25 (not 30). These adjusted thresholds reflect the fact that South Asians tend to have higher body fat percentages and greater abdominal fat at lower BMI values, increasing the risk of metabolic diseases like type 2 diabetes and cardiovascular disease.
+      </div>
+      <p>Studies have consistently shown that Indians develop insulin resistance, diabetes, and heart disease at BMI levels considered &ldquo;normal&rdquo; by Western standards. The Indian Council of Medical Research (ICMR) and several cardiological societies in India support using these revised cutoffs for better health screening. If you are of South Asian descent, consider a BMI below 23 as the target for optimal health.</p>
+      <table class="bmi-table">
+        <thead>
+          <tr>
+            <th>BMI Range</th>
+            <th>Standard (WHO)</th>
+            <th>Asian/Indian Cutoff</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Below 18.5</td>
+            <td>Underweight</td>
+            <td>Underweight</td>
+          </tr>
+          <tr>
+            <td>18.5 &ndash; 22.9</td>
+            <td>Normal</td>
+            <td>Normal</td>
+          </tr>
+          <tr>
+            <td>23.0 &ndash; 24.9</td>
+            <td>Normal</td>
+            <td>Overweight</td>
+          </tr>
+          <tr>
+            <td>25.0 &ndash; 29.9</td>
+            <td>Overweight</td>
+            <td>Obese</td>
+          </tr>
+          <tr>
+            <td>30.0+</td>
+            <td>Obese</td>
+            <td>Severely Obese</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Tips -->
+    <section class="content-section">
+      <h2>Tips for Maintaining a Healthy Weight</h2>
+      <p>Regardless of your current BMI, adopting the following habits can help you achieve and maintain a healthy body weight:</p>
+      <ul>
+        <li><strong>Eat a balanced diet</strong> &mdash; focus on whole grains, fruits, vegetables, lean proteins, and healthy fats. Limit processed foods, sugary drinks, and excessive salt intake. The traditional Indian diet, when balanced, offers excellent nutrition.</li>
+        <li><strong>Stay physically active</strong> &mdash; aim for at least 150 minutes of moderate-intensity exercise per week, such as brisk walking, cycling, swimming, or yoga. Even 30 minutes of daily walking can make a significant difference.</li>
+        <li><strong>Monitor portion sizes</strong> &mdash; overeating even healthy foods can lead to weight gain. Use smaller plates, eat slowly, and stop when you feel satisfied rather than completely full.</li>
+        <li><strong>Get adequate sleep</strong> &mdash; poor sleep is linked to weight gain and increased appetite. Aim for 7 to 8 hours of quality sleep each night.</li>
+        <li><strong>Manage stress</strong> &mdash; chronic stress triggers cortisol production, which can increase appetite and promote fat storage, especially around the abdomen. Practice stress-relief techniques like meditation, deep breathing, or spending time in nature.</li>
+        <li><strong>Stay hydrated</strong> &mdash; drink plenty of water throughout the day. Sometimes thirst is mistaken for hunger, leading to unnecessary snacking.</li>
+        <li><strong>Get regular health checkups</strong> &mdash; monitor your blood sugar, cholesterol, and blood pressure regularly, especially if your BMI is above the normal range or you have a family history of metabolic diseases.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>What is BMI and how is it calculated?</h3>
+      <p>BMI (Body Mass Index) is a numerical value derived from your weight and height using the formula: weight in kilograms divided by the square of height in meters. It was devised in the 19th century by Belgian mathematician Adolphe Quetelet as a quick way to assess whether a person&rsquo;s weight is proportional to their height. Today, it is used globally as an initial screening tool for weight-related health risks.</p>
+
+      <h3>Is BMI an accurate measure of health?</h3>
+      <p>BMI is a useful population-level screening tool, but it has limitations at the individual level. It does not differentiate between muscle mass and fat mass, which means a muscular athlete may be classified as overweight or obese despite having low body fat. Similarly, an older person with reduced muscle mass may have a normal BMI but carry excess fat. For a comprehensive health assessment, BMI should be combined with waist circumference measurements, body fat analysis, and clinical evaluation.</p>
+
+      <h3>What are the recommended BMI cutoffs for Indian body types?</h3>
+      <p>The WHO recommends lower BMI thresholds for Asian and South Asian populations. For Indians, overweight is classified as a BMI of 23 or above, and obesity begins at a BMI of 25 or above. These lower cutoffs account for the fact that South Asians tend to develop metabolic complications such as insulin resistance, type 2 diabetes, and cardiovascular disease at lower BMI values compared to Western populations. Multiple studies conducted in India have confirmed these risks.</p>
+
+      <h3>What is a healthy BMI range?</h3>
+      <p>The standard healthy BMI range is 18.5 to 24.9 according to the WHO. For Asian and Indian individuals, a BMI between 18.5 and 22.9 is considered optimal. Maintaining your BMI within the healthy range is associated with lower risk of chronic diseases, better energy levels, improved mental health, and longer life expectancy. If your BMI falls outside the healthy range, consult a healthcare professional for personalized guidance.</p>
+
+      <h3>What is the difference between BMI and body fat percentage?</h3>
+      <p>BMI is an indirect measure based on weight and height, while body fat percentage directly measures the proportion of your body that is fat tissue. Two individuals with identical BMI values can have vastly different body fat percentages depending on their muscle mass, bone density, and body composition. Body fat percentage is measured using techniques like DEXA scans, bioelectrical impedance analysis, hydrostatic weighing, or skinfold calipers. For most people, BMI serves as a reasonable approximation, but athletes and highly muscular individuals should rely on body fat measurements instead.</p>
+
+      <h3>What are the limitations of BMI?</h3>
+      <p>BMI has several well-documented limitations. It cannot distinguish between fat and muscle, does not indicate where fat is distributed in the body (visceral fat around organs is more dangerous than subcutaneous fat), does not account for differences in body composition between men and women, and may be less reliable for children, the elderly, pregnant women, and athletes. Despite these shortcomings, it remains a quick, free, and easy screening method that provides a starting point for assessing weight-related health risks.</p>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <div class="related-grid">
+        <a href="/tools/age-calculator.html" class="related-card">Age Calculator</a>
+        <a href="/tools/percentage-calculator.html" class="related-card">Percentage Calculator</a>
+        <a href="/tools/sip-calculator.html" class="related-card">SIP Calculator</a>
+        <a href="/tools/emi-calculator.html" class="related-card">EMI Calculator</a>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy Policy</a>
+      <a href="/pages/disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> ToolsHub. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a></p>
+  </footer>
+
+  <!-- Utilities -->
+  <script src="/assets/js/utils.js"></script>
+
+  <script>
+  (function() {
+    var weightInput = document.getElementById('weight');
+    var heightInput = document.getElementById('height');
+    var ageInput = document.getElementById('age');
+    var calcBtn = document.getElementById('calcBtn');
+    var resultBox = document.getElementById('resultBox');
+
+    function calculateBMI() {
+      var weight = parseFloat(weightInput.value);
+      var height = parseFloat(heightInput.value);
+
+      if (!weight || !height || weight < 20 || weight > 200 || height < 100 || height > 250) {
+        resultBox.style.display = 'none';
+        return;
+      }
+
+      var heightM = height / 100;
+      var bmi = weight / (heightM * heightM);
+      var bmiRounded = Math.round(bmi * 100) / 100;
+
+      // Determine category and color
+      var category, color;
+      if (bmi < 18.5) {
+        category = 'Underweight';
+        color = '#3b82f6';
+      } else if (bmi < 25) {
+        category = 'Normal weight';
+        color = '#22c55e';
+      } else if (bmi < 30) {
+        category = 'Overweight';
+        color = '#eab308';
+      } else if (bmi < 35) {
+        category = 'Obese Class I';
+        color = '#f97316';
+      } else if (bmi < 40) {
+        category = 'Obese Class II';
+        color = '#ef4444';
+      } else {
+        category = 'Obese Class III';
+        color = '#991b1b';
+      }
+
+      // Update BMI value and category
+      var bmiValueEl = document.getElementById('bmiValue');
+      bmiValueEl.textContent = bmiRounded.toFixed(2);
+      bmiValueEl.style.color = color;
+
+      var bmiCategoryEl = document.getElementById('bmiCategory');
+      bmiCategoryEl.textContent = category;
+      bmiCategoryEl.style.color = color;
+
+      // Update gauge marker position (map BMI 15-45 to 0-100%)
+      var minBMI = 15;
+      var maxBMI = 45;
+      var pct = ((bmi - minBMI) / (maxBMI - minBMI)) * 100;
+      pct = Math.max(0, Math.min(100, pct));
+      document.getElementById('bmiMarker').style.left = pct + '%';
+
+      // Healthy weight range for the given height (BMI 18.5 to 24.9)
+      var healthyLow = 18.5 * heightM * heightM;
+      var healthyHigh = 24.9 * heightM * heightM;
+      document.getElementById('healthyLow').textContent = healthyLow.toFixed(1) + ' kg';
+      document.getElementById('healthyHigh').textContent = healthyHigh.toFixed(1) + ' kg';
+
+      resultBox.style.display = 'block';
+
+      // GA4 event
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculate_bmi', {
+          bmi_value: bmiRounded,
+          bmi_category: category,
+          weight_kg: weight,
+          height_cm: height
+        });
+      }
+    }
+
+    var debouncedCalc = (typeof debounce === 'function') ? debounce(calculateBMI, 300) : calculateBMI;
+
+    weightInput.addEventListener('input', debouncedCalc);
+    heightInput.addEventListener('input', debouncedCalc);
+    ageInput.addEventListener('input', debouncedCalc);
+    calcBtn.addEventListener('click', calculateBMI);
+
+    var genderRadios = document.querySelectorAll('input[name="gender"]');
+    for (var i = 0; i < genderRadios.length; i++) {
+      genderRadios[i].addEventListener('change', debouncedCalc);
+    }
+
+    // Calculate on page load
+    calculateBMI();
+  })();
+  </script>
+
+</body>
+</html>
