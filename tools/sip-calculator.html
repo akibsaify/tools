@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Calculator — Calculate Mutual Fund SIP Returns | PaisaPage</title>
+  <meta name="description" content="Free SIP calculator to estimate your mutual fund returns. Enter monthly investment, expected return rate, and tenure to see total wealth with Indian rupee formatting.">
+  <meta name="keywords" content="sip calculator, mutual fund sip, sip return calculator, sip investment calculator india, monthly sip calculator, sip maturity amount">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/sip-calculator.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="SIP Calculator — Calculate Mutual Fund SIP Returns | PaisaPage">
+  <meta property="og:description" content="Free SIP calculator to estimate your mutual fund returns. Enter monthly investment, expected return rate, and tenure to calculate total wealth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/sip-calculator.html">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="PaisaPage">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="SIP Calculator — Mutual Fund SIP Returns | PaisaPage">
+  <meta name="twitter:description" content="Free SIP calculator for Indian investors. Estimate your mutual fund wealth with monthly SIP contributions.">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ZSH9HJTRGT');</script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "SIP Calculator",
+    "url": "https://tools.0110059.xyz/tools/sip-calculator.html",
+    "description": "Free online SIP calculator to estimate mutual fund returns for Indian investors. Calculates future value of monthly SIP investments.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Akib Saify",
+      "url": "https://0110059.xyz"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is SIP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SIP (Systematic Investment Plan) is a method of investing a fixed amount regularly in mutual funds. Instead of investing a lump sum, you invest small amounts monthly, which helps average out market volatility through rupee cost averaging."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is SIP better than lump sum investment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SIP and lump sum serve different purposes. SIP is better for salaried individuals who want to invest regularly without timing the market. Lump sum can be better when markets are at a low. SIP reduces risk through rupee cost averaging and is ideal for building long-term wealth."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I stop my SIP anytime?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can stop your SIP at any time without any penalty in most open-ended mutual funds. However, if you redeem units of ELSS funds before the 3-year lock-in period, you cannot withdraw those specific units."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a step-up SIP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A step-up SIP (also called top-up SIP) allows you to increase your SIP amount periodically, usually annually by a fixed percentage or amount. This helps your investments grow in line with your rising income and fights inflation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much should I invest monthly in SIP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A common guideline is to invest at least 20-30% of your monthly income. You can start a SIP with as little as Rs 500 per month. Use a SIP calculator to work backwards from your financial goal to determine the ideal monthly investment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are SIP returns guaranteed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, SIP returns are not guaranteed as mutual funds are subject to market risks. The returns shown in calculators are based on assumed annual rates. Actual returns depend on market performance, fund selection, and investment duration."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tools.0110059.xyz/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://tools.0110059.xyz/tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SIP Calculator",
+        "item": "https://tools.0110059.xyz/tools/sip-calculator.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Paisa</span>Page</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; SIP Calculator
+    </nav>
+
+    <!-- Page Title -->
+    <section class="content-section" style="margin-top:20px">
+      <h1 style="font-size:1.5rem;font-weight:700;line-height:1.3">SIP Calculator &mdash; Estimate Your Mutual Fund Returns</h1>
+      <p>Plan your wealth-building journey with this free SIP calculator. Enter your monthly investment, expected return rate, and investment period to see how much your systematic investment plan could grow over time.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </section>
+
+    <!-- Calculator Tool Box -->
+    <div class="tool-box">
+
+      <!-- Monthly Investment -->
+      <div class="form-group range-group">
+        <label for="monthly">Monthly Investment (₹)</label>
+        <div class="input-prefix">
+          <input type="number" id="monthly" value="5000" min="500" max="100000" step="500" inputmode="numeric">
+        </div>
+        <input type="range" id="monthlyRange" min="500" max="100000" step="500" value="5000" aria-label="Monthly investment slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>₹500</span><span>₹1,00,000</span></div>
+      </div>
+
+      <!-- Expected Annual Return -->
+      <div class="form-group range-group">
+        <label for="rate">Expected Annual Return (%)</label>
+        <input type="number" id="rate" value="12" min="1" max="30" step="0.5" inputmode="decimal">
+        <input type="range" id="rateRange" min="1" max="30" step="0.5" value="12" aria-label="Expected return slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1%</span><span>30%</span></div>
+      </div>
+
+      <!-- Investment Period -->
+      <div class="form-group range-group">
+        <label for="years">Investment Period (Years)</label>
+        <input type="number" id="years" value="10" min="1" max="40" step="1" inputmode="numeric">
+        <input type="range" id="yearsRange" min="1" max="40" step="1" value="10" aria-label="Investment period slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1 yr</span><span>40 yrs</span></div>
+      </div>
+
+      <!-- Calculate Button -->
+      <button class="btn-calculate" id="calcBtn" type="button">Calculate</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result-box" id="resultBox" style="display:none">
+      <div class="result-label">Expected Amount</div>
+      <div class="result-main" id="resultTotal">₹0</div>
+      <div id="resultIndian" style="font-size:0.85rem;color:var(--text-muted);margin-top:4px"></div>
+
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="val" id="resultInvested">₹0</div>
+          <div class="lbl">Total Invested</div>
+        </div>
+        <div class="result-item positive">
+          <div class="val" id="resultReturns">₹0</div>
+          <div class="lbl">Estimated Returns</div>
+        </div>
+        <div class="result-item">
+          <div class="val" id="resultWealth">₹0</div>
+          <div class="lbl">Wealth Gained</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This SIP Calculator</h2>
+      <ol>
+        <li><strong>Enter your monthly investment</strong> &mdash; the fixed amount you plan to invest each month via SIP. You can start with as little as ₹500.</li>
+        <li><strong>Set the expected annual return</strong> &mdash; the average yearly return you expect from your mutual fund. Equity funds in India have historically delivered 10&ndash;15% annual returns over the long term.</li>
+        <li><strong>Choose your investment period</strong> &mdash; how many years you plan to continue the SIP. Longer durations benefit significantly from the power of compounding.</li>
+        <li><strong>View your results</strong> &mdash; the calculator instantly shows the expected maturity amount, total amount invested, estimated returns, and overall wealth gained.</li>
+      </ol>
+    </section>
+
+    <!-- How SIP Returns are Calculated -->
+    <section class="content-section">
+      <h2>How SIP Returns Are Calculated</h2>
+      <p>A Systematic Investment Plan (SIP) works by investing a fixed amount every month into a mutual fund scheme. Each monthly instalment buys units at the prevailing NAV (Net Asset Value). Over time, you benefit from rupee cost averaging and the power of compounding.</p>
+      <p>The future value of a SIP is calculated using this standard formula:</p>
+      <div style="background:var(--bg-secondary);padding:16px;border-radius:var(--radius);margin:12px 0;font-family:monospace;font-size:0.95rem;overflow-x:auto">
+        FV = P &times; [((1 + r)<sup>n</sup> &minus; 1) / r] &times; (1 + r)
+      </div>
+      <p>Where:</p>
+      <table class="formula-table">
+        <tr><th>Variable</th><th>Meaning</th></tr>
+        <tr><td><strong>FV</strong></td><td>Future value of the investment</td></tr>
+        <tr><td><strong>P</strong></td><td>Monthly SIP amount (e.g., ₹5,000)</td></tr>
+        <tr><td><strong>r</strong></td><td>Monthly rate of return (annual rate / 12 / 100)</td></tr>
+        <tr><td><strong>n</strong></td><td>Total number of instalments (years &times; 12)</td></tr>
+      </table>
+
+      <h3>Worked Example</h3>
+      <p>Suppose you invest <strong>₹5,000 per month</strong> at an expected annual return of <strong>12%</strong> for <strong>10 years</strong>:</p>
+      <ul>
+        <li>Monthly rate (r) = 12 / 12 / 100 = 0.01</li>
+        <li>Total months (n) = 10 &times; 12 = 120</li>
+        <li>FV = 5000 &times; [((1.01)<sup>120</sup> &minus; 1) / 0.01] &times; 1.01</li>
+        <li>FV = 5000 &times; [(3.300 &minus; 1) / 0.01] &times; 1.01</li>
+        <li>FV &asymp; <strong>₹11,61,695</strong></li>
+      </ul>
+      <p>Your total investment would be ₹6,00,000 (₹5,000 &times; 120 months), and the estimated returns would be approximately ₹5,61,695 &mdash; nearly doubling your invested amount through the magic of compounding.</p>
+    </section>
+
+    <!-- Benefits of SIP / Tips -->
+    <section class="content-section">
+      <h2>Benefits of SIP &amp; Smart Investment Tips</h2>
+      <p>SIP is one of the most popular and disciplined ways to build wealth in India. Here are the key advantages and tips to maximise your returns:</p>
+      <ul>
+        <li><strong>Start early, benefit more:</strong> The earlier you begin your SIP, the more time compounding has to work. Starting at age 25 instead of 35 with the same monthly amount can result in nearly double the corpus at retirement, simply because of the extra decade of compounding.</li>
+        <li><strong>Rupee cost averaging:</strong> By investing a fixed amount every month regardless of market conditions, you buy more units when prices are low and fewer when prices are high. Over time, this averages out your purchase cost and reduces the impact of market volatility.</li>
+        <li><strong>Consider step-up SIP:</strong> As your income grows, increase your SIP amount annually by 10&ndash;15%. A step-up SIP can dramatically boost your final corpus. For instance, increasing a ₹5,000 SIP by just 10% each year over 20 years can result in a significantly larger wealth than a flat SIP.</li>
+        <li><strong>Power of compounding:</strong> Albert Einstein reportedly called compounding the eighth wonder of the world. In SIP, the returns you earn start generating their own returns over time. The longer you stay invested, the more powerful this effect becomes.</li>
+        <li><strong>Stay invested through volatility:</strong> Market dips are inevitable but temporary. Investors who continue their SIPs during downturns often see the best long-term results. Avoid pausing your SIP due to short-term market fluctuations.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>What is SIP?</summary>
+        <div class="faq-answer">
+          <p>SIP stands for Systematic Investment Plan. It is a method of investing a fixed amount at regular intervals (usually monthly) into a mutual fund scheme. SIP allows you to start investing with small amounts, making it accessible for salaried individuals. Each instalment purchases units at the current NAV, and over time you benefit from rupee cost averaging and compounding.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is SIP better than lump sum investment?</summary>
+        <div class="faq-answer">
+          <p>Neither is universally better &mdash; it depends on your situation. SIP is ideal for regular investors who want to avoid the risk of timing the market. It smooths out volatility through rupee cost averaging. Lump sum investment can outperform SIP when markets are at a low point. For most salaried Indians, SIP is the preferred approach because it enforces financial discipline and spreads risk over time.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I stop my SIP anytime?</summary>
+        <div class="faq-answer">
+          <p>Yes, in most open-ended mutual funds, you can stop or pause your SIP at any time without any penalty or exit load on the SIP itself. However, if you redeem (withdraw) your units, exit loads may apply depending on the fund and holding period. ELSS funds have a mandatory 3-year lock-in per instalment. Always check your fund&rsquo;s terms before making changes.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is a step-up SIP?</summary>
+        <div class="faq-answer">
+          <p>A step-up SIP (also known as a top-up SIP) lets you automatically increase your SIP amount at fixed intervals, typically once a year. You can choose to increase by a fixed amount (e.g., ₹1,000 more each year) or a percentage (e.g., 10% annually). This strategy aligns your investments with your growing income and can substantially increase your final corpus compared to a flat SIP.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How much should I invest monthly in SIP?</summary>
+        <div class="faq-answer">
+          <p>Financial advisors generally recommend investing 20&ndash;30% of your monthly income. However, the right amount depends on your financial goals, existing commitments, and risk appetite. You can start a SIP with as little as ₹500 per month. Use a goal-based approach: decide your target amount and timeline, then work backwards using this SIP calculator to find the required monthly investment.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are SIP returns guaranteed?</summary>
+        <div class="faq-answer">
+          <p>No, SIP returns are not guaranteed. Mutual funds invest in market-linked instruments (equities, bonds, etc.), and their returns depend on market performance. The returns shown in any SIP calculator are based on assumed annual return rates and are for illustration only. Historically, equity mutual funds in India have delivered 10&ndash;15% CAGR over 10+ year periods, but past performance does not guarantee future results.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <div class="related-tools">
+        <a href="/tools/emi-calculator.html" class="related-tool-card">
+          <div class="rtc-title">EMI Calculator</div>
+          <div class="rtc-desc">Calculate monthly EMI for home, car, or personal loans</div>
+        </a>
+        <a href="/tools/fd-calculator.html" class="related-tool-card">
+          <div class="rtc-title">FD Calculator</div>
+          <div class="rtc-desc">Estimate maturity amount for fixed deposits</div>
+        </a>
+        <a href="/tools/ppf-calculator.html" class="related-tool-card">
+          <div class="rtc-title">PPF Calculator</div>
+          <div class="rtc-desc">Calculate Public Provident Fund returns over 15 years</div>
+        </a>
+        <a href="/tools/compound-interest-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Compound Interest Calculator</div>
+          <div class="rtc-desc">See how compounding grows your money over time</div>
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy Policy</a>
+      <a href="/pages/disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> PaisaPage. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a></p>
+  </footer>
+
+  <!-- Utilities -->
+  <script src="/assets/js/utils.js"></script>
+
+  <script>
+  (function() {
+    var monthlyInput  = document.getElementById('monthly');
+    var monthlyRange  = document.getElementById('monthlyRange');
+    var rateInput     = document.getElementById('rate');
+    var rateRange     = document.getElementById('rateRange');
+    var yearsInput    = document.getElementById('years');
+    var yearsRange    = document.getElementById('yearsRange');
+    var calcBtn       = document.getElementById('calcBtn');
+    var resultBox     = document.getElementById('resultBox');
+
+    // Sync number inputs with range sliders
+    function syncPair(numInput, rangeInput) {
+      numInput.addEventListener('input', function() { rangeInput.value = numInput.value; debouncedCalc(); });
+      rangeInput.addEventListener('input', function() { numInput.value = rangeInput.value; debouncedCalc(); });
+    }
+    syncPair(monthlyInput, monthlyRange);
+    syncPair(rateInput, rateRange);
+    syncPair(yearsInput, yearsRange);
+
+    function calculate() {
+      var monthly = parseFloat(monthlyInput.value) || 0;
+      var rate    = parseFloat(rateInput.value) || 0;
+      var years   = parseInt(yearsInput.value) || 0;
+
+      // Clamp values
+      if (monthly < 500) monthly = 500;
+      if (monthly > 100000) monthly = 100000;
+      if (rate < 1) rate = 1;
+      if (rate > 30) rate = 30;
+      if (years < 1) years = 1;
+      if (years > 40) years = 40;
+
+      var totalInvested = monthly * years * 12;
+      var futureValue   = calculateSIP(monthly, rate, years);
+      var returns       = futureValue - totalInvested;
+
+      // Update DOM
+      document.getElementById('resultTotal').textContent    = formatINR(futureValue);
+      document.getElementById('resultIndian').textContent   = '~ ₹' + formatIndian(futureValue);
+      document.getElementById('resultInvested').textContent = formatINR(totalInvested);
+      document.getElementById('resultReturns').textContent  = formatINR(returns);
+      document.getElementById('resultWealth').textContent   = formatINR(returns);
+      resultBox.style.display = 'block';
+
+      // GA4 event
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculate_sip', {
+          monthly_investment: monthly,
+          annual_return: rate,
+          period_years: years,
+          future_value: futureValue
+        });
+      }
+    }
+
+    var debouncedCalc = debounce(calculate, 300);
+
+    calcBtn.addEventListener('click', calculate);
+
+    // Calculate on page load with defaults
+    calculate();
+  })();
+  </script>
+
+</body>
+</html>
