@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GST Calculator — Calculate GST Amount Instantly | ToolsHub</title>
+  <meta name="description" content="Free online GST calculator for India. Add or remove GST at 3%, 5%, 12%, 18% or 28%. See CGST, SGST split and total amount instantly.">
+  <meta name="keywords" content="GST calculator, GST calculator India, add GST, remove GST, CGST SGST calculator, reverse GST calculator, 18% GST, 28% GST">
+  <meta name="author" content="Akib Saify">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/gst-calculator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GST Calculator — Calculate GST Amount Instantly | ToolsHub">
+  <meta property="og:description" content="Free online GST calculator for India. Add or remove GST at any rate. See CGST, SGST breakdown instantly.">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/gst-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ToolsHub">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GST Calculator — Calculate GST Amount Instantly | ToolsHub">
+  <meta name="twitter:description" content="Free online GST calculator for India. Add or remove GST at any rate with CGST/SGST split.">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZSH9HJTRGT');
+  </script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GST Calculator",
+    "url": "https://tools.0110059.xyz/tools/gst-calculator.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "description": "Free online GST calculator for India. Add or remove GST at 3%, 5%, 12%, 18% or 28%. See CGST and SGST split instantly."
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the current GST rates in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "India has five main GST rate slabs: 0% (essential items like fresh fruits, vegetables and milk), 3% (gold, silver and platinum), 5% (household necessities like packaged food, economy rail tickets and footwear below Rs 500), 12% (processed food, business class air tickets and apparel above Rs 1,000), 18% (most goods and services including electronics, restaurants with AC, IT services and financial services), and 28% (luxury and demerit goods such as automobiles, cement, tobacco and aerated drinks)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between CGST, SGST and IGST?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "CGST (Central GST) and SGST (State GST) are levied equally on intra-state transactions. For example, if the GST rate is 18%, then 9% CGST goes to the Central Government and 9% SGST goes to the State Government. IGST (Integrated GST) is levied on inter-state transactions and imports at the full rate (e.g., 18%). The Central Government collects IGST and then distributes the state share to the destination state."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the reverse charge mechanism under GST?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under the reverse charge mechanism (RCM), the liability to pay GST shifts from the supplier to the recipient of goods or services. This applies in specific cases notified by the government, such as services received from an unregistered dealer, legal services by an advocate, or services by a goods transport agency. The recipient must self-assess and pay GST directly to the government."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are HSN codes and why are they important for GST?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "HSN stands for Harmonized System of Nomenclature, an internationally standardized system of names and numbers to classify traded goods. Under GST, businesses with turnover above Rs 5 crore must mention 6-digit HSN codes on invoices. Businesses with turnover between Rs 1.5 crore and Rs 5 crore need 4-digit HSN codes. HSN codes determine the applicable GST rate for each product and are essential for correct tax filing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the composition scheme under GST?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The composition scheme is a simplified tax scheme for small businesses with annual turnover up to Rs 1.5 crore (Rs 75 lakh for special category states). Under this scheme, businesses pay GST at a flat rate — 1% for manufacturers, 5% for restaurant services, and 1% for other suppliers. They file quarterly returns instead of monthly and cannot claim input tax credit. Inter-state supplies are not allowed under this scheme."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate GST on an amount that already includes GST?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To remove GST from an inclusive amount, use the formula: Original Price = GST-inclusive Amount × 100 / (100 + GST Rate). For example, if the total amount is Rs 11,800 and GST rate is 18%, then Original Price = 11,800 × 100 / 118 = Rs 10,000, and GST = Rs 11,800 - Rs 10,000 = Rs 1,800. This is also called reverse GST calculation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tools.0110059.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://tools.0110059.xyz/tools/" },
+      { "@type": "ListItem", "position": 3, "name": "GST Calculator", "item": "https://tools.0110059.xyz/tools/gst-calculator.html" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; GST Calculator
+    </nav>
+
+    <!-- Heading -->
+    <h1 style="font-size:1.6rem; font-weight:700; margin-top:20px;">GST Calculator &mdash; Calculate GST Amount Instantly</h1>
+    <p class="last-updated" style="color:var(--text-secondary); margin-bottom:4px;">Add or remove GST at any Indian tax slab. See CGST, SGST split and total price instantly.</p>
+    <p class="last-updated">Last updated: March 2026</p>
+
+    <!-- Tool Box -->
+    <div class="tool-box">
+
+      <!-- Amount -->
+      <div class="form-group">
+        <label for="amount">Amount (&#8377;)</label>
+        <div class="input-prefix">
+          <input type="number" id="amount" value="10000" min="1" step="1" inputmode="numeric" style="min-height:44px;">
+        </div>
+      </div>
+
+      <!-- GST Rate -->
+      <div class="form-group">
+        <label for="gstRate">GST Rate</label>
+        <select id="gstRate" style="min-height:44px; padding:10px 12px; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg); font-size:1rem; width:100%;">
+          <option value="3">3%</option>
+          <option value="5">5%</option>
+          <option value="12">12%</option>
+          <option value="18" selected>18%</option>
+          <option value="28">28%</option>
+        </select>
+      </div>
+
+      <!-- Calculation Type -->
+      <div class="form-group">
+        <label>Calculation Type</label>
+        <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:6px;">
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer; min-height:44px; padding:8px 16px; border:1px solid var(--border); border-radius:var(--radius); flex:1; min-width:180px;">
+            <input type="radio" name="calcType" value="add" checked style="width:20px; height:20px;"> Add GST to amount
+          </label>
+          <label style="display:flex; align-items:center; gap:8px; cursor:pointer; min-height:44px; padding:8px 16px; border:1px solid var(--border); border-radius:var(--radius); flex:1; min-width:180px;">
+            <input type="radio" name="calcType" value="remove" style="width:20px; height:20px;"> Remove GST from amount
+          </label>
+        </div>
+      </div>
+
+      <!-- Calculate Button -->
+      <button class="btn-calculate" id="calculateBtn" type="button">Calculate GST</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result-box" id="resultBox" style="display:none;">
+      <div class="result-label" id="resultLabel">Total Price (incl. GST)</div>
+      <div class="result-main" id="totalResult">--</div>
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="val" id="originalResult">--</div>
+          <div class="lbl" id="originalLabel">Original Price</div>
+        </div>
+        <div class="result-item">
+          <div class="val" id="gstResult">--</div>
+          <div class="lbl">GST Amount</div>
+        </div>
+        <div class="result-item">
+          <div class="val" id="cgstResult">--</div>
+          <div class="lbl">CGST (<span id="cgstRateLabel">9</span>%)</div>
+        </div>
+        <div class="result-item">
+          <div class="val" id="sgstResult">--</div>
+          <div class="lbl">SGST (<span id="sgstRateLabel">9</span>%)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This GST Calculator</h2>
+      <p>This free online GST calculator helps you compute the Goods and Services Tax for any amount under India's GST regime. Whether you are a business owner generating invoices, a freelancer pricing services, or a consumer verifying a bill, follow these steps:</p>
+      <ol>
+        <li><strong>Enter the Amount</strong> &mdash; Type the base price (before GST) or the total price (including GST) depending on what you already know. For example, enter 10,000 if that is your product cost.</li>
+        <li><strong>Select the GST Rate</strong> &mdash; Choose the applicable GST slab from the dropdown: 3%, 5%, 12%, 18% or 28%. Most services and electronics fall under 18%, while luxury goods attract 28%.</li>
+        <li><strong>Choose the Calculation Type</strong> &mdash; Select "Add GST to amount" if you have the base price and want the final inclusive price. Select "Remove GST from amount" if you have the GST-inclusive price and want to find the original cost and tax component.</li>
+        <li><strong>View Your Results</strong> &mdash; The calculator instantly displays the original price, total GST amount, CGST and SGST split, and the total payable amount. Results update automatically whenever you change any input.</li>
+      </ol>
+    </section>
+
+    <!-- GST Rate Categories -->
+    <section class="content-section">
+      <h2>GST Rate Categories in India</h2>
+      <p>India's GST structure uses multiple rate slabs to balance revenue collection with the affordability of essential goods. Here is a comprehensive breakdown of each slab with common examples:</p>
+      <table class="formula-table">
+        <thead>
+          <tr><th>GST Rate</th><th>Category</th><th>Examples</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>0%</strong></td><td>Exempt / Essential</td><td>Fresh fruits, vegetables, milk, eggs, bread, salt, natural honey, educational services, healthcare services</td></tr>
+          <tr><td><strong>3%</strong></td><td>Precious Metals</td><td>Gold, silver, platinum, diamonds, gold jewellery, silver ornaments</td></tr>
+          <tr><td><strong>5%</strong></td><td>Necessities</td><td>Packaged food items, sugar, tea, coffee, edible oils, economy class air tickets, footwear below &#8377;500, fertilisers, newspapers</td></tr>
+          <tr><td><strong>12%</strong></td><td>Standard (Lower)</td><td>Processed food, butter, ghee, fruit juices, apparel above &#8377;1,000, business class air tickets, mobile phones, sewing machines</td></tr>
+          <tr><td><strong>18%</strong></td><td>Standard</td><td>Most goods and services &mdash; electronics, computers, refrigerators, restaurant meals (AC), IT services, financial services, telecom, hair oil, toothpaste, steel products</td></tr>
+          <tr><td><strong>28%</strong></td><td>Luxury / Demerit</td><td>Automobiles, cement, chocolates, pan masala, tobacco products, aerated drinks, washing machines, air conditioners, dishwashers, paint</td></tr>
+        </tbody>
+      </table>
+      <p>Note: Some items under the 28% slab also attract an additional GST compensation cess. For instance, luxury cars may have a cess of 1% to 22% on top of the 28% GST, and aerated drinks carry a 12% cess.</p>
+    </section>
+
+    <!-- How GST Works -->
+    <section class="content-section">
+      <h2>How GST Works in India</h2>
+      <p>The Goods and Services Tax (GST) was introduced on 1 July 2017, replacing a complex web of central and state indirect taxes including excise duty, service tax, VAT, CST, entertainment tax and octroi. It is a comprehensive, multi-stage, destination-based tax levied on every value addition in the supply chain.</p>
+      <p>The key principle behind GST is the <strong>input tax credit (ITC)</strong> mechanism. Each business in the supply chain pays GST on its purchases and collects GST on its sales. The tax already paid on inputs is credited against the tax collected on outputs. This eliminates the cascading effect (tax on tax) that plagued the earlier system.</p>
+      <h3>GST Calculation Formulas</h3>
+      <p style="text-align:center; font-size:1.05rem; font-weight:600; padding:16px; background:var(--bg-secondary); border-radius:var(--radius); margin:12px 0;">
+        Add GST: Total = Amount + (Amount &times; Rate / 100)<br>
+        Remove GST: Original = Amount &times; 100 / (100 + Rate)
+      </p>
+      <p>For intra-state sales, the GST is split equally into CGST (Central GST) and SGST (State GST). So if 18% GST applies, 9% goes as CGST and 9% as SGST. For inter-state sales, the full rate is charged as IGST (Integrated GST).</p>
+    </section>
+
+    <!-- CGST vs SGST vs IGST -->
+    <section class="content-section">
+      <h2>CGST vs SGST vs IGST &mdash; Key Differences</h2>
+      <p>Understanding the three components of GST is essential for correct invoicing and tax filing in India:</p>
+      <table class="formula-table">
+        <thead>
+          <tr><th>Component</th><th>Full Form</th><th>When Applied</th><th>Collected By</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>CGST</strong></td><td>Central GST</td><td>Intra-state (within same state)</td><td>Central Government</td></tr>
+          <tr><td><strong>SGST</strong></td><td>State GST</td><td>Intra-state (within same state)</td><td>State Government</td></tr>
+          <tr><td><strong>IGST</strong></td><td>Integrated GST</td><td>Inter-state (between two states) or imports</td><td>Central Government (later shared with destination state)</td></tr>
+        </tbody>
+      </table>
+      <p>For example, if a seller in Maharashtra sells goods worth &#8377;10,000 to a buyer also in Maharashtra at 18% GST, the invoice will show &#8377;900 CGST + &#8377;900 SGST = &#8377;1,800 GST. If the same seller sells to a buyer in Karnataka, the invoice will show &#8377;1,800 IGST instead. In Union Territories, UTGST replaces SGST.</p>
+      <p>Input tax credit can be utilised across these components with specific rules: IGST credit can be used against IGST, CGST and SGST liabilities. CGST credit can be used against CGST and then IGST. SGST credit can be used against SGST and then IGST. CGST credit cannot be used against SGST and vice versa.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>What are the current GST rates in India?</summary>
+        <div class="faq-answer">
+          <p>India has five main GST rate slabs: 0% for essential items like fresh fruits, vegetables and milk; 3% for gold and silver; 5% for household necessities like packaged food and economy rail tickets; 12% for processed food and business class air tickets; 18% for most goods and services including electronics, IT services and financial services; and 28% for luxury and demerit goods such as automobiles, cement, tobacco and aerated drinks. Some items also attract an additional compensation cess above the 28% slab.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the difference between CGST, SGST and IGST?</summary>
+        <div class="faq-answer">
+          <p>CGST (Central GST) and SGST (State GST) are levied equally on intra-state transactions. For instance, if the GST rate is 18%, then 9% CGST goes to the Central Government and 9% SGST goes to the State Government. IGST (Integrated GST) applies on inter-state transactions and imports at the full rate. The Central Government collects IGST and then distributes the state portion to the destination state. This split ensures both central and state governments receive their share of tax revenue.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the reverse charge mechanism under GST?</summary>
+        <div class="faq-answer">
+          <p>Under the reverse charge mechanism (RCM), the liability to pay GST shifts from the supplier to the recipient of goods or services. This applies in specific cases notified by the government under Sections 9(3) and 9(4) of the CGST Act, such as services received from an unregistered dealer, legal services from an advocate, services by a goods transport agency (GTA), or sponsorship services. The recipient must self-assess and pay the GST directly to the government and can later claim input tax credit on it.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What are HSN codes and why are they important for GST?</summary>
+        <div class="faq-answer">
+          <p>HSN stands for Harmonized System of Nomenclature, an internationally standardised system of names and numbers to classify traded goods. Under India's GST, businesses with annual turnover above &#8377;5 crore must mention 6-digit HSN codes on all invoices. Businesses with turnover between &#8377;1.5 crore and &#8377;5 crore need 4-digit HSN codes. HSN codes determine the applicable GST rate for each product and are essential for correct tax computation, filing returns on the GST portal, and enabling the government to track taxable goods systematically.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the composition scheme under GST?</summary>
+        <div class="faq-answer">
+          <p>The composition scheme is a simplified tax scheme for small businesses with annual turnover up to &#8377;1.5 crore (&#8377;75 lakh for special category states). Under this scheme, businesses pay GST at a flat rate: 1% for manufacturers, 5% for restaurant services, and 1% for other suppliers. They file quarterly returns instead of monthly ones and face lower compliance burden. However, composition dealers cannot claim input tax credit, cannot make inter-state supplies, and must mention "composition taxable person" on their invoices and signboards.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I calculate GST on an amount that already includes GST?</summary>
+        <div class="faq-answer">
+          <p>To extract GST from an inclusive amount (reverse calculation), use the formula: Original Price = GST-inclusive Amount &times; 100 / (100 + GST Rate). For example, if the total bill is &#8377;11,800 and the GST rate is 18%, then Original Price = 11,800 &times; 100 / 118 = &#8377;10,000, and GST = &#8377;11,800 &minus; &#8377;10,000 = &#8377;1,800 (split as &#8377;900 CGST + &#8377;900 SGST for intra-state). You can use this calculator's "Remove GST from amount" option to do this instantly.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Financial Calculators</h2>
+      <div class="related-tools">
+        <a href="/tools/emi-calculator.html" class="related-tool-card">
+          <div class="rtc-title">EMI Calculator</div>
+          <div class="rtc-desc">Calculate monthly EMI for home loans, car loans and personal loans.</div>
+        </a>
+        <a href="/tools/income-tax-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Income Tax Calculator</div>
+          <div class="rtc-desc">Estimate your income tax liability under old and new regimes.</div>
+        </a>
+        <a href="/tools/percentage-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Percentage Calculator</div>
+          <div class="rtc-desc">Calculate percentages, increases, decreases and differences.</div>
+        </a>
+        <a href="/tools/salary-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Salary Calculator</div>
+          <div class="rtc-desc">Convert between CTC, in-hand salary and monthly take-home pay.</div>
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy-policy.html">Privacy Policy</a>
+      <a href="/pages/disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; <span id="footerYear"></span> ToolsHub. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a>.</p>
+  </footer>
+
+  <script src="/assets/js/utils.js"></script>
+  <script>
+    (function () {
+      // Dynamic footer year
+      document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+      // DOM references
+      var amountInput = document.getElementById('amount');
+      var gstRateSelect = document.getElementById('gstRate');
+      var calcTypeRadios = document.querySelectorAll('input[name="calcType"]');
+      var calculateBtn = document.getElementById('calculateBtn');
+      var resultBox = document.getElementById('resultBox');
+
+      function getCalcType() {
+        for (var i = 0; i < calcTypeRadios.length; i++) {
+          if (calcTypeRadios[i].checked) return calcTypeRadios[i].value;
+        }
+        return 'add';
+      }
+
+      function compute() {
+        var amount = parseFloat(amountInput.value);
+        var rate = parseFloat(gstRateSelect.value);
+
+        if (isNaN(amount) || amount <= 0 || isNaN(rate)) return;
+
+        var calcType = getCalcType();
+        var originalPrice, gstAmount, totalPrice;
+
+        if (calcType === 'add') {
+          // Add GST to amount
+          originalPrice = amount;
+          gstAmount = amount * rate / 100;
+          totalPrice = amount + gstAmount;
+        } else {
+          // Remove GST from amount (amount is GST-inclusive)
+          totalPrice = amount;
+          originalPrice = amount * 100 / (100 + rate);
+          gstAmount = amount - originalPrice;
+        }
+
+        var halfRate = rate / 2;
+        var cgst = gstAmount / 2;
+        var sgst = gstAmount / 2;
+
+        // Update labels based on calc type
+        if (calcType === 'add') {
+          document.getElementById('resultLabel').textContent = 'Total Price (incl. GST)';
+          document.getElementById('originalLabel').textContent = 'Original Price';
+        } else {
+          document.getElementById('resultLabel').textContent = 'Total Price (incl. GST)';
+          document.getElementById('originalLabel').textContent = 'Original Price (excl. GST)';
+        }
+
+        document.getElementById('totalResult').textContent = formatINR(totalPrice);
+        document.getElementById('originalResult').textContent = formatINR(originalPrice);
+        document.getElementById('gstResult').textContent = formatINR(gstAmount);
+        document.getElementById('cgstResult').textContent = formatINR(cgst);
+        document.getElementById('sgstResult').textContent = formatINR(sgst);
+        document.getElementById('cgstRateLabel').textContent = halfRate;
+        document.getElementById('sgstRateLabel').textContent = halfRate;
+
+        resultBox.style.display = '';
+
+        // GA4 event
+        if (typeof gtag === 'function') {
+          gtag('event', 'calculate_gst', {
+            amount: amount,
+            gst_rate: rate,
+            calc_type: calcType,
+            gst_amount: gstAmount
+          });
+        }
+      }
+
+      var debouncedCalc = debounce(compute, 300);
+
+      // Auto-calculate on any input change
+      amountInput.addEventListener('input', debouncedCalc);
+      gstRateSelect.addEventListener('change', compute);
+      for (var i = 0; i < calcTypeRadios.length; i++) {
+        calcTypeRadios[i].addEventListener('change', compute);
+      }
+      calculateBtn.addEventListener('click', compute);
+
+      // Calculate on page load with defaults
+      compute();
+    })();
+  </script>
+</body>
+</html>

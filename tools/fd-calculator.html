@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FD Calculator — Calculate Fixed Deposit Maturity Amount | ToolsHub</title>
+  <meta name="description" content="Free FD calculator to estimate your fixed deposit maturity amount. Enter deposit amount, interest rate, tenure, and compounding frequency to calculate returns with Indian rupee formatting.">
+  <meta name="keywords" content="fd calculator, fixed deposit calculator, fd maturity calculator, fd interest calculator india, fixed deposit return calculator, fd rate calculator">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/fd-calculator.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FD Calculator — Calculate Fixed Deposit Maturity Amount | ToolsHub">
+  <meta property="og:description" content="Free FD calculator to estimate your fixed deposit maturity amount. Enter deposit, rate, tenure, and compounding frequency to see returns.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/fd-calculator.html">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="ToolsHub">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="FD Calculator — Fixed Deposit Maturity Amount | ToolsHub">
+  <meta name="twitter:description" content="Free FD calculator for Indian investors. Estimate your fixed deposit maturity amount with quarterly, monthly, half-yearly, or yearly compounding.">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ZSH9HJTRGT');</script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FD Calculator",
+    "url": "https://tools.0110059.xyz/tools/fd-calculator.html",
+    "description": "Free online FD calculator to estimate fixed deposit maturity amount for Indian investors. Supports quarterly, monthly, half-yearly, and yearly compounding.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Akib Saify",
+      "url": "https://0110059.xyz"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between FD and RD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Fixed Deposit (FD) requires a one-time lump sum investment for a fixed tenure, while a Recurring Deposit (RD) involves depositing a fixed amount every month. FDs generally offer slightly higher interest rates than RDs. FD is ideal when you have a lump sum to invest, whereas RD suits those who want to save regularly from monthly income."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TDS applicable on fixed deposit interest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, TDS (Tax Deducted at Source) is applicable on FD interest if the total interest earned across all FDs in a bank exceeds Rs 40,000 per financial year (Rs 50,000 for senior citizens). TDS is deducted at 10% if PAN is provided, and at 20% if PAN is not furnished. You can submit Form 15G or 15H to avoid TDS if your total income is below the taxable limit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which bank offers the best FD rates in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FD rates vary across banks and change frequently. As of early 2026, India Post offers around 7.5% for 5-year FDs, SBI offers approximately 7.10%, PNB around 7.05%, and HDFC and ICICI Bank offer about 7.0% for general customers. Small finance banks often offer higher rates (up to 8-9%). Always compare the latest rates before investing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a tax-saver fixed deposit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A tax-saver FD is a special fixed deposit with a 5-year lock-in period that qualifies for tax deduction under Section 80C of the Income Tax Act. You can claim a deduction of up to Rs 1.5 lakh per year. However, the interest earned on tax-saver FDs is fully taxable. Premature withdrawal is not allowed in tax-saver FDs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I withdraw my FD prematurely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most banks allow premature withdrawal of FDs but charge a penalty, typically 0.5% to 1% reduction from the applicable interest rate. The interest is recalculated at the rate applicable for the actual period of the deposit minus the penalty. Tax-saver FDs with a 5-year lock-in cannot be withdrawn prematurely. Some banks also offer partial withdrawal facilities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do senior citizens get higher FD interest rates?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, almost all banks in India offer 0.25% to 0.75% higher FD interest rates for senior citizens (aged 60 and above). Some banks also offer super senior citizen rates (aged 80+) with an additional premium. For example, if the general FD rate is 7.10%, senior citizens may get 7.60% or more. This makes FDs a popular investment choice among retirees."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tools.0110059.xyz/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://tools.0110059.xyz/tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "FD Calculator",
+        "item": "https://tools.0110059.xyz/tools/fd-calculator.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; FD Calculator
+    </nav>
+
+    <!-- Page Title -->
+    <section class="content-section" style="margin-top:20px">
+      <h1 style="font-size:1.5rem;font-weight:700;line-height:1.3">FD Calculator &mdash; Calculate Fixed Deposit Maturity Amount</h1>
+      <p>Use this free FD calculator to find out how much your fixed deposit will be worth at maturity. Enter your deposit amount, interest rate, tenure, and compounding frequency to instantly see the maturity amount, total interest earned, and a detailed year-by-year growth table.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </section>
+
+    <!-- Calculator Tool Box -->
+    <div class="tool-box">
+
+      <!-- Deposit Amount -->
+      <div class="form-group range-group">
+        <label for="principal">Deposit Amount (&rupee;)</label>
+        <div class="input-prefix">
+          <input type="number" id="principal" value="100000" min="1000" max="10000000" step="1000" inputmode="numeric">
+        </div>
+        <input type="range" id="principalRange" min="1000" max="10000000" step="1000" value="100000" aria-label="Deposit amount slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>&rupee;1,000</span><span>&rupee;1,00,00,000</span></div>
+      </div>
+
+      <!-- Interest Rate -->
+      <div class="form-group range-group">
+        <label for="rate">Interest Rate (% p.a.)</label>
+        <input type="number" id="rate" value="7.1" min="1" max="15" step="0.1" inputmode="decimal">
+        <input type="range" id="rateRange" min="1" max="15" step="0.1" value="7.1" aria-label="Interest rate slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1%</span><span>15%</span></div>
+      </div>
+
+      <!-- Tenure -->
+      <div class="form-group range-group">
+        <label for="years">Tenure (Years)</label>
+        <input type="number" id="years" value="5" min="1" max="10" step="1" inputmode="numeric">
+        <input type="range" id="yearsRange" min="1" max="10" step="1" value="5" aria-label="Tenure slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1 yr</span><span>10 yrs</span></div>
+      </div>
+
+      <!-- Compounding Frequency -->
+      <div class="form-group">
+        <label for="frequency">Compounding Frequency</label>
+        <select id="frequency" style="width:100%;padding:12px;font-size:1rem;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg);color:var(--text);min-height:44px">
+          <option value="12">Monthly</option>
+          <option value="4" selected>Quarterly</option>
+          <option value="2">Half-Yearly</option>
+          <option value="1">Yearly</option>
+        </select>
+      </div>
+
+      <!-- Calculate Button -->
+      <button class="btn-calculate" id="calcBtn" type="button">Calculate</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result-box" id="resultBox" style="display:none">
+      <div class="result-label">Maturity Amount</div>
+      <div class="result-main" id="resultMaturity">&rupee;0</div>
+      <div id="resultIndian" style="font-size:0.85rem;color:var(--text-muted);margin-top:4px"></div>
+
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="val" id="resultPrincipal">&rupee;0</div>
+          <div class="lbl">Principal (Invested)</div>
+        </div>
+        <div class="result-item positive">
+          <div class="val" id="resultInterest">&rupee;0</div>
+          <div class="lbl">Interest Earned</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Year-by-Year Growth Table -->
+    <div id="growthTableWrap" style="display:none">
+      <section class="content-section">
+        <h2>Year-by-Year FD Growth</h2>
+        <div style="overflow-x:auto">
+          <table class="formula-table" id="growthTable">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Opening Balance</th>
+                <th>Interest Earned</th>
+                <th>Closing Balance</th>
+              </tr>
+            </thead>
+            <tbody id="growthBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This FD Calculator</h2>
+      <ol>
+        <li><strong>Enter your deposit amount</strong> &mdash; the lump sum you plan to invest in the fixed deposit. This can range from &rupee;1,000 to &rupee;1 crore or more depending on your bank.</li>
+        <li><strong>Set the interest rate</strong> &mdash; the annual interest rate offered by your bank. Most Indian banks currently offer between 6.5% and 7.5% for general customers, with higher rates for senior citizens.</li>
+        <li><strong>Choose the tenure</strong> &mdash; the number of years for which you want to keep the deposit locked. Longer tenures generally earn more interest through compounding.</li>
+        <li><strong>Select compounding frequency</strong> &mdash; how often the interest is compounded. Most banks compound quarterly by default, but you can choose monthly, half-yearly, or yearly compounding to compare.</li>
+        <li><strong>View your results</strong> &mdash; the calculator instantly shows the maturity amount, total interest earned, and a year-by-year breakdown of how your deposit grows.</li>
+      </ol>
+    </section>
+
+    <!-- FD Formula Explained -->
+    <section class="content-section">
+      <h2>FD Formula &mdash; How Maturity Amount Is Calculated</h2>
+      <p>Fixed deposits use the compound interest formula to calculate the maturity amount. Unlike simple interest, compound interest earns interest on previously accumulated interest, which leads to faster growth of your deposit over time.</p>
+      <p>The standard formula used by banks to calculate FD maturity is:</p>
+      <div style="background:var(--bg-secondary);padding:16px;border-radius:var(--radius);margin:12px 0;font-family:monospace;font-size:0.95rem;overflow-x:auto">
+        A = P &times; (1 + r/n)<sup>n&times;t</sup>
+      </div>
+      <p>Where:</p>
+      <table class="formula-table">
+        <tr><th>Variable</th><th>Meaning</th></tr>
+        <tr><td><strong>A</strong></td><td>Maturity amount (principal + interest)</td></tr>
+        <tr><td><strong>P</strong></td><td>Principal deposit amount (e.g., &rupee;1,00,000)</td></tr>
+        <tr><td><strong>r</strong></td><td>Annual interest rate (in decimal, e.g., 7.1% = 0.071)</td></tr>
+        <tr><td><strong>n</strong></td><td>Compounding frequency per year (4 for quarterly, 12 for monthly)</td></tr>
+        <tr><td><strong>t</strong></td><td>Tenure in years</td></tr>
+      </table>
+
+      <h3>Worked Example</h3>
+      <p>Suppose you invest <strong>&rupee;1,00,000</strong> in an FD at <strong>7.1% p.a.</strong> for <strong>5 years</strong> with <strong>quarterly compounding</strong>:</p>
+      <ul>
+        <li>P = 1,00,000</li>
+        <li>r = 7.1 / 100 = 0.071</li>
+        <li>n = 4 (quarterly)</li>
+        <li>t = 5 years</li>
+        <li>A = 1,00,000 &times; (1 + 0.071/4)<sup>4&times;5</sup></li>
+        <li>A = 1,00,000 &times; (1.01775)<sup>20</sup></li>
+        <li>A = 1,00,000 &times; 1.4190</li>
+        <li>A &asymp; <strong>&rupee;1,41,902</strong></li>
+      </ul>
+      <p>So your total interest earned would be approximately <strong>&rupee;41,902</strong> over 5 years. Notice how quarterly compounding earns you slightly more than simple interest would (&rupee;35,500), because each quarter&rsquo;s interest begins earning its own interest in subsequent quarters.</p>
+    </section>
+
+    <!-- Current FD Rates -->
+    <section class="content-section">
+      <h2>Current FD Interest Rates in India (2026)</h2>
+      <p>Here is a comparison of fixed deposit interest rates offered by major Indian banks for general customers on a 5-year FD. Senior citizens typically receive an additional 0.25% to 0.75% above these rates.</p>
+      <div style="overflow-x:auto">
+        <table class="formula-table">
+          <thead>
+            <tr>
+              <th>Bank / Institution</th>
+              <th>FD Rate (General)</th>
+              <th>FD Rate (Senior Citizen)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Post Office (POTD)</td><td>7.50%</td><td>7.50%*</td></tr>
+            <tr><td>SBI</td><td>7.10%</td><td>7.60%</td></tr>
+            <tr><td>PNB</td><td>7.05%</td><td>7.55%</td></tr>
+            <tr><td>HDFC Bank</td><td>7.00%</td><td>7.50%</td></tr>
+            <tr><td>ICICI Bank</td><td>7.00%</td><td>7.50%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem;color:var(--text-muted);margin-top:8px">* Post Office does not offer a separate senior citizen rate for POTD. Rates are approximate and subject to change. Always verify with the bank before investing.</p>
+    </section>
+
+    <!-- Tips -->
+    <section class="content-section">
+      <h2>Smart Tips for Fixed Deposit Investors</h2>
+      <ul>
+        <li><strong>Ladder your FDs:</strong> Instead of putting all your money in one FD, split it across multiple FDs with different tenures (1 year, 2 years, 3 years, etc.). This gives you periodic liquidity while still earning good interest. As each FD matures, you can reinvest at prevailing rates.</li>
+        <li><strong>Compare rates across banks:</strong> Interest rates can vary by 0.5% to 1.5% between banks. Small finance banks and corporate FDs often offer higher rates, though they carry slightly more risk. Always check the latest rates before investing.</li>
+        <li><strong>Opt for quarterly compounding:</strong> If given a choice, quarterly compounding earns more than yearly compounding at the same nominal rate. Most major Indian banks compound interest quarterly by default, which is favourable for depositors.</li>
+        <li><strong>Use Form 15G/15H to save TDS:</strong> If your total income is below the taxable limit, submit Form 15G (or 15H for senior citizens) to your bank at the start of each financial year. This prevents the bank from deducting TDS on your FD interest.</li>
+        <li><strong>Consider tax-saver FDs for Section 80C:</strong> If you need to save tax under Section 80C, a 5-year tax-saver FD qualifies for deduction up to &rupee;1.5 lakh. However, note that premature withdrawal is not permitted on these FDs, and the interest earned is fully taxable.</li>
+        <li><strong>Senior citizens should check for special schemes:</strong> Many banks offer additional 0.25&ndash;0.75% interest for senior citizens. Some banks also run special FD schemes with limited-period higher rates &mdash; keep an eye out for these offers.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>What is the difference between FD and RD?</summary>
+        <div class="faq-answer">
+          <p>A Fixed Deposit (FD) requires a one-time lump sum investment for a fixed tenure, while a Recurring Deposit (RD) involves depositing a fixed amount every month for a set period. FDs generally offer slightly higher interest rates than RDs at the same bank. FD is best when you have a lump sum available to invest, whereas RD is suited for those who want to save a fixed amount from their monthly income. Both are considered safe investments backed by the bank and are covered under the DICGC insurance scheme up to &rupee;5 lakh per depositor per bank.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is TDS applicable on fixed deposit interest?</summary>
+        <div class="faq-answer">
+          <p>Yes, banks deduct TDS (Tax Deducted at Source) on FD interest if the total interest earned across all your FDs in that bank exceeds &rupee;40,000 in a financial year (&rupee;50,000 for senior citizens). TDS is deducted at 10% if you have provided your PAN to the bank, and at 20% if PAN is not on file. To avoid TDS when your total income is below the taxable limit, submit Form 15G (or Form 15H if you are a senior citizen) at the beginning of each financial year.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which bank offers the best FD rates in India?</summary>
+        <div class="faq-answer">
+          <p>FD rates change frequently and vary across institutions. As of early 2026, India Post offers around 7.50% for 5-year deposits, SBI offers approximately 7.10%, PNB around 7.05%, and HDFC Bank and ICICI Bank offer about 7.00% for general customers. Small finance banks like AU Small Finance Bank and Ujjivan Small Finance Bank may offer higher rates (up to 8&ndash;9%). Always compare the latest rates on the bank&rsquo;s official website or RBI&rsquo;s portal before making a decision.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is a tax-saver fixed deposit?</summary>
+        <div class="faq-answer">
+          <p>A tax-saver FD is a special 5-year fixed deposit that qualifies for a tax deduction under Section 80C of the Income Tax Act, up to a maximum of &rupee;1.5 lakh per financial year. The key difference from a regular FD is the mandatory 5-year lock-in period &mdash; premature withdrawal or loan against the deposit is not allowed. The interest earned on a tax-saver FD is fully taxable as per your income tax slab and is subject to TDS if it exceeds the threshold.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens if I withdraw my FD prematurely?</summary>
+        <div class="faq-answer">
+          <p>Most banks allow premature withdrawal of regular FDs but impose a penalty, typically a 0.5% to 1% reduction from the applicable interest rate for the period the deposit was held. For example, if you break a 5-year FD after 2 years, the bank will pay the 2-year FD rate minus the penalty. Some banks also offer partial withdrawal or sweep-in facilities. Note that tax-saver FDs with a 5-year lock-in cannot be withdrawn before maturity under any circumstances.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do senior citizens get higher FD interest rates?</summary>
+        <div class="faq-answer">
+          <p>Yes, nearly all banks in India offer an additional 0.25% to 0.75% interest on FDs for senior citizens (aged 60 years and above). Some banks offer a further premium for super senior citizens (aged 80+). For instance, if a bank&rsquo;s general FD rate for 5 years is 7.10%, senior citizens might receive 7.60% or higher. Additionally, the TDS threshold for senior citizens is &rupee;50,000 (versus &rupee;40,000 for others), and they can submit Form 15H to avoid TDS altogether if their income is below the taxable limit. This makes FDs especially popular among retirees for regular income.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <div class="related-tools">
+        <a href="/tools/sip-calculator.html" class="related-tool-card">
+          <div class="rtc-title">SIP Calculator</div>
+          <div class="rtc-desc">Estimate your mutual fund SIP returns over time</div>
+        </a>
+        <a href="/tools/ppf-calculator.html" class="related-tool-card">
+          <div class="rtc-title">PPF Calculator</div>
+          <div class="rtc-desc">Calculate Public Provident Fund returns over 15 years</div>
+        </a>
+        <a href="/tools/compound-interest-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Compound Interest Calculator</div>
+          <div class="rtc-desc">See how compounding grows your money over time</div>
+        </a>
+        <a href="/tools/emi-calculator.html" class="related-tool-card">
+          <div class="rtc-title">EMI Calculator</div>
+          <div class="rtc-desc">Calculate monthly EMI for home, car, or personal loans</div>
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy Policy</a>
+      <a href="/pages/disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> ToolsHub. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a></p>
+  </footer>
+
+  <!-- Utilities -->
+  <script src="/assets/js/utils.js"></script>
+
+  <script>
+  (function() {
+    var principalInput = document.getElementById('principal');
+    var principalRange = document.getElementById('principalRange');
+    var rateInput      = document.getElementById('rate');
+    var rateRange      = document.getElementById('rateRange');
+    var yearsInput     = document.getElementById('years');
+    var yearsRange     = document.getElementById('yearsRange');
+    var freqSelect     = document.getElementById('frequency');
+    var calcBtn        = document.getElementById('calcBtn');
+    var resultBox      = document.getElementById('resultBox');
+
+    // Sync number inputs with range sliders
+    function syncPair(numInput, rangeInput) {
+      numInput.addEventListener('input', function() { rangeInput.value = numInput.value; debouncedCalc(); });
+      rangeInput.addEventListener('input', function() { numInput.value = rangeInput.value; debouncedCalc(); });
+    }
+    syncPair(principalInput, principalRange);
+    syncPair(rateInput, rateRange);
+    syncPair(yearsInput, yearsRange);
+
+    freqSelect.addEventListener('change', function() { debouncedCalc(); });
+
+    function calculate() {
+      var P = parseFloat(principalInput.value) || 0;
+      var r = parseFloat(rateInput.value) || 0;
+      var t = parseInt(yearsInput.value) || 0;
+      var n = parseInt(freqSelect.value) || 4;
+
+      // Clamp values
+      if (P < 1000) P = 1000;
+      if (P > 10000000) P = 10000000;
+      if (r < 1) r = 1;
+      if (r > 15) r = 15;
+      if (t < 1) t = 1;
+      if (t > 10) t = 10;
+
+      // A = P * (1 + r/n)^(n*t)
+      var maturity = calculateCI(P, r, n, t);
+      var interest = maturity - P;
+
+      // Update result display
+      document.getElementById('resultMaturity').textContent  = formatINR(Math.round(maturity));
+      document.getElementById('resultIndian').textContent     = '~ \u20B9' + formatIndian(Math.round(maturity));
+      document.getElementById('resultPrincipal').textContent  = formatINR(P);
+      document.getElementById('resultInterest').textContent   = formatINR(Math.round(interest));
+      resultBox.style.display = 'block';
+
+      // Build year-by-year growth table
+      var tbody = document.getElementById('growthBody');
+      tbody.innerHTML = '';
+      var opening = P;
+      for (var y = 1; y <= t; y++) {
+        var closing = calculateCI(P, r, n, y);
+        var yearInterest = closing - opening;
+        var row = document.createElement('tr');
+        row.innerHTML = '<td>' + y + '</td>' +
+                        '<td>' + formatINR(Math.round(opening)) + '</td>' +
+                        '<td style="color:var(--success)">' + formatINR(Math.round(yearInterest)) + '</td>' +
+                        '<td>' + formatINR(Math.round(closing)) + '</td>';
+        tbody.appendChild(row);
+        opening = closing;
+      }
+      document.getElementById('growthTableWrap').style.display = 'block';
+
+      // GA4 event
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculate_fd', {
+          deposit_amount: P,
+          interest_rate: r,
+          tenure_years: t,
+          compounding: n,
+          maturity_amount: Math.round(maturity)
+        });
+      }
+    }
+
+    var debouncedCalc = debounce(calculate, 300);
+
+    calcBtn.addEventListener('click', calculate);
+
+    // Calculate on page load with defaults
+    calculate();
+  })();
+  </script>
+
+</body>
+</html>

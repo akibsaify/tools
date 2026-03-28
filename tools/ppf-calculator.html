@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPF Calculator — Estimate Public Provident Fund Returns | ToolsHub</title>
+  <meta name="description" content="Free PPF calculator for India. Enter yearly investment, interest rate, and tenure to estimate your Public Provident Fund maturity value, total interest earned, and year-by-year growth.">
+  <meta name="keywords" content="ppf calculator, public provident fund calculator, ppf interest calculator, ppf maturity calculator india, ppf return calculator, ppf investment calculator 2026">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/ppf-calculator.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PPF Calculator — Estimate Public Provident Fund Returns | ToolsHub">
+  <meta property="og:description" content="Free PPF calculator for India. Estimate your PPF maturity value, total interest earned, and view year-by-year growth with the current PPF interest rate.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/ppf-calculator.html">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="ToolsHub">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PPF Calculator — Public Provident Fund Returns | ToolsHub">
+  <meta name="twitter:description" content="Free PPF calculator for Indian investors. Estimate your PPF maturity value and interest earned over 15 to 50 years.">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ZSH9HJTRGT');</script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PPF Calculator",
+    "url": "https://tools.0110059.xyz/tools/ppf-calculator.html",
+    "description": "Free online PPF calculator for Indian investors. Estimate Public Provident Fund maturity value, total interest earned, and view year-by-year breakdown.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Akib Saify",
+      "url": "https://0110059.xyz"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the current PPF interest rate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The current PPF interest rate is 7.1% per annum (as of Q1 FY 2026-27). The Government of India reviews and announces the PPF rate every quarter. Interest is compounded annually and credited to your account at the end of each financial year (31st March)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the PPF lock-in period?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PPF has a mandatory lock-in period of 15 years from the date of opening the account. After the initial 15-year maturity, you can extend the account in blocks of 5 years indefinitely. During the lock-in period, premature closure is only allowed under specific conditions such as serious illness or higher education needs, and only after the account completes 5 years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the tax benefits of PPF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PPF enjoys EEE (Exempt-Exempt-Exempt) tax status, making it one of the most tax-efficient investments in India. Contributions up to Rs 1,50,000 per year qualify for deduction under Section 80C of the Income Tax Act. The interest earned is completely tax-free, and the maturity amount is also exempt from income tax. There is no TDS on PPF interest or withdrawals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the partial withdrawal rules for PPF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Partial withdrawals from PPF are allowed from the 7th financial year onwards (i.e., after completing 6 financial years). The maximum withdrawal allowed is 50% of the balance at the end of the 4th preceding financial year or the balance at the end of the immediately preceding financial year, whichever is lower. Only one withdrawal is permitted per financial year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PPF better than FD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PPF and FD serve different purposes. PPF offers tax-free returns under EEE status, making its effective post-tax return higher than most FDs for taxpayers in the 20-30% bracket. FD interest is fully taxable. However, FDs offer flexible tenures (7 days to 10 years) while PPF has a 15-year lock-in. PPF is ideal for long-term, risk-free, tax-efficient savings, while FDs suit short-to-medium-term goals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can NRIs invest in PPF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NRIs cannot open new PPF accounts in India. However, if a resident Indian who already has a PPF account becomes an NRI, they can continue the existing account until its maturity (15 years). After maturity, the account cannot be extended. The account will earn interest at the PPF rate until maturity, after which it earns no interest if not closed."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tools.0110059.xyz/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://tools.0110059.xyz/tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "PPF Calculator",
+        "item": "https://tools.0110059.xyz/tools/ppf-calculator.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; PPF Calculator
+    </nav>
+
+    <!-- Page Title -->
+    <section class="content-section" style="margin-top:20px">
+      <h1 style="font-size:1.5rem;font-weight:700;line-height:1.3">PPF Calculator &mdash; Estimate Your Public Provident Fund Returns</h1>
+      <p>Calculate your PPF maturity value, total interest earned, and view a detailed year-by-year breakdown. The Public Provident Fund is one of India&rsquo;s safest long-term savings instruments backed by the Government of India, offering guaranteed returns with full tax exemption under the EEE regime.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </section>
+
+    <!-- Calculator Tool Box -->
+    <div class="tool-box">
+
+      <!-- Yearly Investment -->
+      <div class="form-group range-group">
+        <label for="yearly">Yearly Investment (&#8377;)</label>
+        <div class="input-prefix">
+          <input type="number" id="yearly" value="150000" min="500" max="150000" step="500" inputmode="numeric">
+        </div>
+        <input type="range" id="yearlyRange" min="500" max="150000" step="500" value="150000" aria-label="Yearly investment slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>&#8377;500</span><span>&#8377;1,50,000</span></div>
+      </div>
+
+      <!-- PPF Interest Rate -->
+      <div class="form-group range-group">
+        <label for="rate">Current PPF Interest Rate (%)</label>
+        <input type="number" id="rate" value="7.1" min="1" max="15" step="0.1" inputmode="decimal">
+        <input type="range" id="rateRange" min="1" max="15" step="0.1" value="7.1" aria-label="PPF interest rate slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1%</span><span>15%</span></div>
+      </div>
+
+      <!-- Investment Period -->
+      <div class="form-group range-group">
+        <label for="years">Investment Period (Years)</label>
+        <input type="number" id="years" value="15" min="15" max="50" step="5" inputmode="numeric">
+        <input type="range" id="yearsRange" min="15" max="50" step="5" value="15" aria-label="Investment period slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>15 yrs</span><span>50 yrs</span></div>
+      </div>
+
+      <!-- Calculate Button -->
+      <button class="btn-calculate" id="calcBtn" type="button">Calculate</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result-box" id="resultBox" style="display:none">
+      <div class="result-label">Maturity Value</div>
+      <div class="result-main" id="resultMaturity">&#8377;0</div>
+      <div id="resultIndian" style="font-size:0.85rem;color:var(--text-muted);margin-top:4px"></div>
+
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="val" id="resultInvested">&#8377;0</div>
+          <div class="lbl">Total Investment</div>
+        </div>
+        <div class="result-item positive">
+          <div class="val" id="resultInterest">&#8377;0</div>
+          <div class="lbl">Total Interest Earned</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Year-by-Year Table -->
+    <div id="tableContainer" style="display:none">
+      <section class="content-section">
+        <h2>Year-by-Year PPF Growth</h2>
+        <div style="overflow-x:auto">
+          <table class="formula-table" id="yearTable" style="width:100%;text-align:right">
+            <thead>
+              <tr><th style="text-align:left">Year</th><th>Deposit</th><th>Interest</th><th>Balance</th></tr>
+            </thead>
+            <tbody id="yearTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This PPF Calculator</h2>
+      <ol>
+        <li><strong>Enter your yearly investment</strong> &mdash; the amount you plan to deposit into your PPF account each year. The minimum is &#8377;500 and the maximum allowed is &#8377;1,50,000 per financial year under current rules.</li>
+        <li><strong>Set the PPF interest rate</strong> &mdash; the current rate set by the Government of India is 7.1% per annum. The rate is reviewed quarterly, so you can adjust it to model different scenarios.</li>
+        <li><strong>Choose the investment period</strong> &mdash; PPF has a minimum lock-in of 15 years. After maturity, you can extend in blocks of 5 years, so the calculator allows periods up to 50 years.</li>
+        <li><strong>View your results</strong> &mdash; the calculator instantly displays the maturity value, total amount deposited, total interest earned, and a complete year-by-year breakdown showing how your PPF corpus grows each year.</li>
+      </ol>
+    </section>
+
+    <!-- PPF Interest Calculation Explained -->
+    <section class="content-section">
+      <h2>How PPF Interest Is Calculated</h2>
+      <p>PPF interest is calculated monthly but compounded annually. The key detail every investor must know is that interest is calculated on the <strong>lowest balance between the 5th and the last day of each month</strong>. This means:</p>
+      <ul>
+        <li>If you deposit money <strong>before the 5th of the month</strong>, that amount earns interest for that entire month.</li>
+        <li>If you deposit <strong>after the 5th</strong>, the deposit earns interest only from the next month onwards.</li>
+        <li>The monthly interest amounts are totalled and credited to your account on <strong>31st March</strong> each year.</li>
+      </ul>
+      <p>The annual compounding formula used in this calculator is:</p>
+      <div style="background:var(--bg-secondary);padding:16px;border-radius:var(--radius);margin:12px 0;font-family:monospace;font-size:0.95rem;overflow-x:auto">
+        A = P &times; [((1 + r)<sup>n</sup> &minus; 1) / r]
+      </div>
+      <p>Where:</p>
+      <table class="formula-table">
+        <tr><th>Variable</th><th>Meaning</th></tr>
+        <tr><td><strong>A</strong></td><td>Maturity value at the end of the tenure</td></tr>
+        <tr><td><strong>P</strong></td><td>Fixed yearly deposit (e.g., &#8377;1,50,000)</td></tr>
+        <tr><td><strong>r</strong></td><td>Annual interest rate (e.g., 7.1% = 0.071)</td></tr>
+        <tr><td><strong>n</strong></td><td>Number of years (minimum 15)</td></tr>
+      </table>
+
+      <h3>Worked Example</h3>
+      <p>Suppose you invest <strong>&#8377;1,50,000 per year</strong> at <strong>7.1%</strong> for <strong>15 years</strong>:</p>
+      <ul>
+        <li>Total deposits = &#8377;1,50,000 &times; 15 = &#8377;22,50,000</li>
+        <li>Maturity value &asymp; <strong>&#8377;40,68,209</strong></li>
+        <li>Total interest earned &asymp; &#8377;18,18,209</li>
+      </ul>
+      <p>By maximising your annual contribution to the Section 80C limit of &#8377;1,50,000, you accumulate over &#8377;40 lakh in 15 years &mdash; with every rupee of interest completely tax-free.</p>
+
+      <p><strong>Pro tip:</strong> To maximise interest, deposit your entire annual amount as a lump sum before the 5th of April each financial year. This ensures your money earns interest for all 12 months of the year, resulting in a slightly higher maturity value compared to monthly or irregular deposits.</p>
+    </section>
+
+    <!-- PPF Features Table -->
+    <section class="content-section">
+      <h2>Key Features of PPF at a Glance</h2>
+      <div style="overflow-x:auto">
+        <table class="formula-table" style="width:100%">
+          <tr><th style="width:40%">Feature</th><th>Details</th></tr>
+          <tr><td><strong>Current Interest Rate</strong></td><td>7.1% per annum (compounded annually, reviewed quarterly)</td></tr>
+          <tr><td><strong>Lock-in Period</strong></td><td>15 years (extendable in 5-year blocks)</td></tr>
+          <tr><td><strong>Minimum Deposit</strong></td><td>&#8377;500 per financial year</td></tr>
+          <tr><td><strong>Maximum Deposit</strong></td><td>&#8377;1,50,000 per financial year</td></tr>
+          <tr><td><strong>Tax Benefit</strong></td><td>EEE (Exempt-Exempt-Exempt) &mdash; contribution under 80C, interest tax-free, maturity tax-free</td></tr>
+          <tr><td><strong>Loan Facility</strong></td><td>Available from 3rd to 6th financial year (up to 25% of balance at end of 2nd preceding year)</td></tr>
+          <tr><td><strong>Partial Withdrawal</strong></td><td>From 7th year onwards (up to 50% of balance at end of 4th preceding year)</td></tr>
+          <tr><td><strong>Where to Open</strong></td><td>Post offices, SBI, and most nationalised and private banks</td></tr>
+          <tr><td><strong>Risk Level</strong></td><td>Zero &mdash; sovereign guarantee by Government of India</td></tr>
+          <tr><td><strong>Nomination</strong></td><td>Allowed (one or more nominees can be appointed)</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- Benefits of PPF -->
+    <section class="content-section">
+      <h2>Benefits of Investing in PPF</h2>
+      <p>The Public Provident Fund remains one of the most popular savings schemes in India for good reason. Here are the key advantages that make PPF a cornerstone of financial planning for millions of Indians:</p>
+      <ul>
+        <li><strong>Complete tax exemption (EEE status):</strong> PPF is one of the few instruments in India that enjoys Exempt-Exempt-Exempt tax treatment. Your contribution qualifies for a Section 80C deduction (up to &#8377;1,50,000), the interest earned is not taxed, and the entire maturity amount is tax-free. For someone in the 30% tax bracket, the effective post-tax return of PPF at 7.1% is significantly higher than most taxable alternatives.</li>
+        <li><strong>Government-backed safety:</strong> PPF is a sovereign-guaranteed scheme, meaning your principal and interest are backed by the Government of India. Unlike bank deposits that are insured only up to &#8377;5 lakh by DICGC, your entire PPF balance carries a government guarantee regardless of the amount.</li>
+        <li><strong>Power of long-term compounding:</strong> The 15-year lock-in, while sometimes seen as a drawback, forces disciplined long-term saving. Annual compounding over 15+ years creates a powerful snowball effect. If you extend your PPF beyond 15 years, the compounding accelerates even further because interest is earned on a much larger base.</li>
+        <li><strong>Protection from creditors:</strong> PPF accounts are protected from attachment by court orders. This makes PPF a safe haven for your savings even during financial difficulties, debt recovery proceedings, or insolvency situations.</li>
+        <li><strong>Flexible contributions:</strong> You can invest any amount between &#8377;500 and &#8377;1,50,000 per financial year, in a lump sum or up to 12 instalments. This flexibility allows you to adjust your contributions based on your financial situation each year without any penalty.</li>
+      </ul>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>What is the current PPF interest rate?</summary>
+        <div class="faq-answer">
+          <p>The current PPF interest rate is 7.1% per annum, as of Q1 FY 2026-27. The Government of India reviews the PPF interest rate every quarter along with other small savings scheme rates. The rate is announced by the Ministry of Finance and applies for that particular quarter. Interest on PPF is compounded annually and credited to the account on 31st March each year.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the PPF lock-in period?</summary>
+        <div class="faq-answer">
+          <p>PPF has a mandatory lock-in period of 15 years from the end of the financial year in which the account was opened. After 15 years, you can either withdraw the entire maturity amount or extend the account in blocks of 5 years &mdash; with or without fresh contributions. Premature closure is allowed only after 5 years under specific circumstances like serious illness of the account holder, spouse, or children, or for higher education expenses.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What are the tax benefits of PPF?</summary>
+        <div class="faq-answer">
+          <p>PPF offers triple tax exemption (EEE status). Deposits up to &#8377;1,50,000 per year are eligible for deduction under Section 80C of the Income Tax Act. The interest earned throughout the tenure is completely tax-free &mdash; there is no TDS deducted. The maturity amount, including all accumulated interest, is fully exempt from income tax. This makes PPF one of the most tax-efficient long-term instruments available in India.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What are the partial withdrawal rules for PPF?</summary>
+        <div class="faq-answer">
+          <p>Partial withdrawals are permitted from the 7th financial year onwards (after completing 6 full financial years from the date of account opening). The maximum you can withdraw is 50% of the balance at the end of the 4th preceding financial year or the balance at the end of the immediately preceding year, whichever is lower. Only one partial withdrawal is allowed per financial year. These withdrawals are completely tax-free.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is PPF better than FD?</summary>
+        <div class="faq-answer">
+          <p>PPF and FD cater to different needs. PPF offers tax-free returns (EEE status) and a government guarantee, making it ideal for long-term retirement savings. FD interest is fully taxable at your income tax slab rate, which significantly reduces the effective return. For someone in the 30% tax bracket, a bank FD offering 7% effectively yields only about 4.9% post-tax, while PPF at 7.1% gives the full 7.1% tax-free. However, FDs offer much shorter and flexible lock-in periods (7 days to 10 years), making them better for short-term goals or emergency funds.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can NRIs invest in PPF?</summary>
+        <div class="faq-answer">
+          <p>Non-Resident Indians (NRIs) are not permitted to open new PPF accounts in India. However, if a person who already holds a PPF account becomes an NRI, they can continue the existing account on a non-repatriable basis until its 15-year maturity. After maturity, the account cannot be extended further and must be closed. Interest will be credited at the prevailing PPF rate until maturity. It is advisable for NRIs to inform their bank or post office about the change in residential status.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <div class="related-tools">
+        <a href="/tools/fd-calculator.html" class="related-tool-card">
+          <div class="rtc-title">FD Calculator</div>
+          <div class="rtc-desc">Estimate maturity amount for fixed deposits</div>
+        </a>
+        <a href="/tools/sip-calculator.html" class="related-tool-card">
+          <div class="rtc-title">SIP Calculator</div>
+          <div class="rtc-desc">Calculate mutual fund SIP returns over time</div>
+        </a>
+        <a href="/tools/compound-interest-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Compound Interest Calculator</div>
+          <div class="rtc-desc">See how compounding grows your money over time</div>
+        </a>
+        <a href="/tools/income-tax-calculator.html" class="related-tool-card">
+          <div class="rtc-title">Income Tax Calculator</div>
+          <div class="rtc-desc">Calculate your income tax under old and new regime</div>
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy Policy</a>
+      <a href="/pages/disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> ToolsHub. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a></p>
+  </footer>
+
+  <!-- Utilities -->
+  <script src="/assets/js/utils.js"></script>
+
+  <script>
+  (function() {
+    var yearlyInput  = document.getElementById('yearly');
+    var yearlyRange  = document.getElementById('yearlyRange');
+    var rateInput    = document.getElementById('rate');
+    var rateRange    = document.getElementById('rateRange');
+    var yearsInput   = document.getElementById('years');
+    var yearsRange   = document.getElementById('yearsRange');
+    var calcBtn      = document.getElementById('calcBtn');
+    var resultBox    = document.getElementById('resultBox');
+    var tableContainer = document.getElementById('tableContainer');
+
+    // Sync number inputs with range sliders
+    function syncPair(numInput, rangeInput) {
+      numInput.addEventListener('input', function() { rangeInput.value = numInput.value; debouncedCalc(); });
+      rangeInput.addEventListener('input', function() { numInput.value = rangeInput.value; debouncedCalc(); });
+    }
+    syncPair(yearlyInput, yearlyRange);
+    syncPair(rateInput, rateRange);
+    syncPair(yearsInput, yearsRange);
+
+    // Enforce 5-year blocks after 15 for the number input
+    yearsInput.addEventListener('change', function() {
+      var val = parseInt(yearsInput.value) || 15;
+      if (val < 15) val = 15;
+      if (val > 50) val = 50;
+      if (val > 15) {
+        val = 15 + Math.round((val - 15) / 5) * 5;
+      }
+      yearsInput.value = val;
+      yearsRange.value = val;
+    });
+
+    function calculate() {
+      var yearly = parseFloat(yearlyInput.value) || 0;
+      var rate   = parseFloat(rateInput.value) || 0;
+      var years  = parseInt(yearsInput.value) || 15;
+
+      // Clamp values
+      if (yearly < 500) yearly = 500;
+      if (yearly > 150000) yearly = 150000;
+      if (rate < 1) rate = 1;
+      if (rate > 15) rate = 15;
+      if (years < 15) years = 15;
+      if (years > 50) years = 50;
+
+      var r = rate / 100;
+      var balance = 0;
+      var totalDeposit = 0;
+      var tableRows = '';
+
+      // Year-by-year calculation: deposit at start of year, interest on (opening balance + deposit)
+      for (var i = 1; i <= years; i++) {
+        balance += yearly;
+        totalDeposit += yearly;
+        var interest = Math.round(balance * r);
+        balance += interest;
+
+        tableRows += '<tr>' +
+          '<td style="text-align:left">' + i + '</td>' +
+          '<td>' + formatINR(yearly) + '</td>' +
+          '<td>' + formatINR(interest) + '</td>' +
+          '<td>' + formatINR(balance) + '</td>' +
+          '</tr>';
+      }
+
+      var totalInterest = balance - totalDeposit;
+
+      // Update DOM
+      document.getElementById('resultMaturity').textContent  = formatINR(balance);
+      document.getElementById('resultIndian').textContent    = '~ \u20B9' + formatIndian(balance);
+      document.getElementById('resultInvested').textContent  = formatINR(totalDeposit);
+      document.getElementById('resultInterest').textContent  = formatINR(totalInterest);
+      document.getElementById('yearTableBody').innerHTML     = tableRows;
+      resultBox.style.display = 'block';
+      tableContainer.style.display = 'block';
+
+      // GA4 event
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculate_ppf', {
+          yearly_investment: yearly,
+          interest_rate: rate,
+          period_years: years,
+          maturity_value: balance
+        });
+      }
+    }
+
+    var debouncedCalc = debounce(calculate, 300);
+
+    calcBtn.addEventListener('click', calculate);
+
+    // Calculate on page load with defaults
+    calculate();
+  })();
+  </script>
+
+</body>
+</html>

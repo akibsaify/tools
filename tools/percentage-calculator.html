@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Calculator — Quick & Easy Percentage Calculations | ToolsHub</title>
+  <meta name="description" content="Free online percentage calculator with 4 modes: find percentage of a number, what percent one number is of another, percentage increase/decrease, and adjust a value by a percentage. Instant results, no sign-up.">
+  <meta name="keywords" content="percentage calculator, percent calculator, percentage increase, percentage decrease, percentage of a number, percentage change, percentage formula">
+  <meta name="author" content="Akib Saify">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/percentage-calculator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Percentage Calculator — Quick & Easy Percentage Calculations | ToolsHub">
+  <meta property="og:description" content="Free online percentage calculator with 4 modes. Find percentage of a number, percentage change, increase or decrease by a percent. Instant results.">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/percentage-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ToolsHub">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Percentage Calculator — Quick & Easy Percentage Calculations | ToolsHub">
+  <meta name="twitter:description" content="Free online percentage calculator with 4 modes. Instant results, no sign-up required.">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ZSH9HJTRGT');
+  </script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Percentage Calculator",
+    "url": "https://tools.0110059.xyz/tools/percentage-calculator.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Free online percentage calculator with 4 calculation modes: find percentage of a number, what percent one number is of another, percentage increase/decrease, and adjust a value by a percentage."
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you calculate a percentage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To calculate a percentage, divide the part by the whole and multiply by 100. For example, if you scored 45 out of 60, the percentage is (45 / 60) x 100 = 75%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the percentage formula?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The basic percentage formula is: Percentage = (Part / Whole) x 100. To find a percentage of a number, use: Result = (Percentage / 100) x Number."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you calculate percentage increase?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Percentage increase = ((New Value - Old Value) / Old Value) x 100. For example, if a price goes from 200 to 250, the increase is ((250 - 200) / 200) x 100 = 25%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you find percentage of marks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To find percentage of marks, divide the marks obtained by the total marks and multiply by 100. For example, if you scored 420 out of 500, your percentage is (420 / 500) x 100 = 84%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you convert a percentage to a decimal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To convert a percentage to a decimal, divide it by 100. For example, 75% = 75 / 100 = 0.75. Conversely, multiply a decimal by 100 to get the percentage: 0.45 x 100 = 45%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between percentage difference and percentage change?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Percentage change measures the increase or decrease from an original value to a new value: ((New - Old) / Old) x 100. Percentage difference compares two values without a defined 'original': (|A - B| / ((A + B) / 2)) x 100. Use percentage change when one value is the starting point; use percentage difference when comparing two independent values."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tools.0110059.xyz/" },
+      { "@type": "ListItem", "position": 2, "name": "Tools", "item": "https://tools.0110059.xyz/tools/" },
+      { "@type": "ListItem", "position": 3, "name": "Percentage Calculator", "item": "https://tools.0110059.xyz/tools/percentage-calculator.html" }
+    ]
+  }
+  </script>
+
+  <style>
+    .pct-tabs { display:flex; gap:0; margin-bottom:0; border-bottom:2px solid var(--border-color, #ddd); overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .pct-tab { flex:1; min-width:0; padding:12px 8px; text-align:center; font-size:0.85rem; font-weight:600; border:none; background:none; cursor:pointer; color:var(--text-secondary, #666); border-bottom:3px solid transparent; margin-bottom:-2px; white-space:nowrap; min-height:44px; transition:color .2s, border-color .2s; }
+    .pct-tab.active { color:var(--primary, #2563eb); border-bottom-color:var(--primary, #2563eb); }
+    .pct-tab:hover { color:var(--primary, #2563eb); }
+    .pct-panel { display:none; padding:20px 0 0; }
+    .pct-panel.active { display:block; }
+    .pct-inline { display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:1rem; line-height:1.6; }
+    .pct-inline input[type="number"] { width:110px; min-height:44px; padding:8px 12px; font-size:1rem; border:1px solid var(--border-color, #ccc); border-radius:var(--radius, 8px); background:var(--bg, #fff); color:var(--text, #111); }
+    .pct-inline span { font-weight:500; }
+    .pct-result-line { margin-top:16px; padding:16px; background:var(--bg-secondary, #f7f7f7); border-radius:var(--radius, 8px); font-size:1.15rem; font-weight:700; color:var(--primary, #2563eb); text-align:center; min-height:52px; display:flex; align-items:center; justify-content:center; }
+    .formula-block { text-align:center; font-size:1.05rem; font-weight:600; padding:16px; background:var(--bg-secondary, #f7f7f7); border-radius:var(--radius, 8px); margin:12px 0; }
+    @media(max-width:600px) {
+      .pct-tab { font-size:0.78rem; padding:10px 6px; }
+      .pct-inline input[type="number"] { width:85px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; Percentage Calculator
+    </nav>
+
+    <!-- Heading -->
+    <h1 style="font-size:1.6rem; font-weight:700; margin-top:20px;">Percentage Calculator &mdash; Quick &amp; Easy Percentage Calculations</h1>
+    <p class="last-updated" style="color:var(--text-secondary); margin-bottom:4px;">Calculate percentages instantly with four different modes. No sign-up, no formulas to remember.</p>
+    <p class="last-updated">Last updated: March 2026</p>
+
+    <!-- Tool Box -->
+    <div class="tool-box">
+
+      <!-- Tabs -->
+      <div class="pct-tabs" role="tablist">
+        <button class="pct-tab active" role="tab" aria-selected="true" data-tab="mode1">X% of Y</button>
+        <button class="pct-tab" role="tab" aria-selected="false" data-tab="mode2">X is ?% of Y</button>
+        <button class="pct-tab" role="tab" aria-selected="false" data-tab="mode3">% Change</button>
+        <button class="pct-tab" role="tab" aria-selected="false" data-tab="mode4">Adjust by %</button>
+      </div>
+
+      <!-- Mode 1: What is X% of Y? -->
+      <div class="pct-panel active" id="mode1" role="tabpanel">
+        <div class="pct-inline">
+          <span>What is</span>
+          <input type="number" id="m1x" value="15" step="any" inputmode="decimal" aria-label="Percentage value">
+          <span>% of</span>
+          <input type="number" id="m1y" value="5000" step="any" inputmode="decimal" aria-label="Number">
+          <span>?</span>
+        </div>
+        <div class="pct-result-line" id="m1result">750</div>
+      </div>
+
+      <!-- Mode 2: X is what % of Y? -->
+      <div class="pct-panel" id="mode2" role="tabpanel">
+        <div class="pct-inline">
+          <input type="number" id="m2x" value="750" step="any" inputmode="decimal" aria-label="Part value">
+          <span>is what % of</span>
+          <input type="number" id="m2y" value="5000" step="any" inputmode="decimal" aria-label="Whole value">
+          <span>?</span>
+        </div>
+        <div class="pct-result-line" id="m2result">15%</div>
+      </div>
+
+      <!-- Mode 3: Percentage increase/decrease from X to Y -->
+      <div class="pct-panel" id="mode3" role="tabpanel">
+        <div class="pct-inline">
+          <span>From</span>
+          <input type="number" id="m3x" value="100" step="any" inputmode="decimal" aria-label="Original value">
+          <span>to</span>
+          <input type="number" id="m3y" value="150" step="any" inputmode="decimal" aria-label="New value">
+        </div>
+        <div class="pct-result-line" id="m3result">50% increase</div>
+      </div>
+
+      <!-- Mode 4: Increase/decrease X by Y% -->
+      <div class="pct-panel" id="mode4" role="tabpanel">
+        <div class="pct-inline">
+          <input type="number" id="m4x" value="1000" step="any" inputmode="decimal" aria-label="Starting value">
+          <span>
+            <select id="m4dir" style="min-height:44px; padding:8px; font-size:1rem; border:1px solid var(--border-color,#ccc); border-radius:var(--radius,8px); background:var(--bg,#fff); color:var(--text,#111);" aria-label="Increase or decrease">
+              <option value="increase">increased by</option>
+              <option value="decrease">decreased by</option>
+            </select>
+          </span>
+          <input type="number" id="m4y" value="20" step="any" inputmode="decimal" aria-label="Percentage to adjust by">
+          <span>%</span>
+        </div>
+        <div class="pct-result-line" id="m4result">1,200</div>
+      </div>
+
+    </div><!-- /tool-box -->
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This Percentage Calculator</h2>
+      <p>This free percentage calculator gives you instant answers for the four most common percentage questions. No formulas to memorise and no sign-up required. Here is how each mode works:</p>
+      <ol>
+        <li><strong>X% of Y</strong> &mdash; Enter a percentage and a number to find the result. For example, enter 18 and 500 to find that 18% of 500 is 90. Great for calculating GST, tips, or discounts.</li>
+        <li><strong>X is what % of Y</strong> &mdash; Enter two numbers to find what percentage the first is of the second. Useful for calculating exam scores: if you scored 420 out of 500, enter 420 and 500 to get 84%.</li>
+        <li><strong>Percentage Change</strong> &mdash; Enter an original value and a new value. The calculator tells you the percentage increase or decrease. Perfect for tracking price changes, salary hikes, or investment returns.</li>
+        <li><strong>Adjust by %</strong> &mdash; Enter a starting value, choose increase or decrease, and enter a percentage. The calculator returns the adjusted result. For instance, 1,000 increased by 20% gives 1,200.</li>
+      </ol>
+      <p>All modes auto-calculate as you type, so results update in real time. Simply switch between tabs to use a different calculation mode.</p>
+    </section>
+
+    <!-- Percentage Formulas -->
+    <section class="content-section">
+      <h2>Percentage Formulas Explained</h2>
+      <p>Understanding the underlying formulas helps you solve percentage problems even without a calculator. Here are the four core formulas this tool uses:</p>
+
+      <h3>1. Find X% of Y</h3>
+      <div class="formula-block">Result = (X / 100) &times; Y</div>
+      <p>Divide the percentage by 100 to convert it to a decimal, then multiply by the number. For example, 15% of 5,000 = (15 / 100) &times; 5,000 = 750. This is the formula behind discount calculations, tax computations, and tip estimates worldwide.</p>
+
+      <h3>2. X is What Percent of Y?</h3>
+      <div class="formula-block">Percentage = (X / Y) &times; 100</div>
+      <p>Divide the part by the whole and multiply by 100. If you scored 420 marks out of 500, your percentage is (420 / 500) &times; 100 = 84%. This formula is essential for grade calculations, market share analysis, and budget tracking.</p>
+
+      <h3>3. Percentage Increase or Decrease</h3>
+      <div class="formula-block">% Change = ((New Value &minus; Old Value) / Old Value) &times; 100</div>
+      <p>A positive result indicates an increase; a negative result indicates a decrease. For example, if a stock price moves from 200 to 250, the change is ((250 &minus; 200) / 200) &times; 100 = 25% increase. This formula is used for salary hikes, inflation tracking, and year-over-year growth comparisons.</p>
+
+      <h3>4. Increase or Decrease a Number by a Percentage</h3>
+      <div class="formula-block">New Value = X &times; (1 &plusmn; Y/100)</div>
+      <p>Use the plus sign for an increase and the minus sign for a decrease. For example, 1,000 increased by 20% = 1,000 &times; 1.20 = 1,200. Similarly, 1,000 decreased by 20% = 1,000 &times; 0.80 = 800. Retailers use this formula to mark up or discount prices.</p>
+    </section>
+
+    <!-- Practical Examples -->
+    <section class="content-section">
+      <h2>Practical Percentage Examples</h2>
+
+      <h3>Exam Marks</h3>
+      <p>A student scores 456 out of 600 in their board exams. Their percentage is (456 / 600) &times; 100 = <strong>76%</strong>. Use Mode 2 of the calculator above to verify this instantly.</p>
+
+      <h3>Shopping Discounts</h3>
+      <p>A jacket originally costs 2,500 and has a 30% discount. The discount amount is 30% of 2,500 = 750. The sale price is 2,500 &minus; 750 = <strong>1,750</strong>. Use Mode 1 to calculate the discount and Mode 4 to find the final price directly (2,500 decreased by 30%).</p>
+
+      <h3>Salary Hike</h3>
+      <p>Your annual salary is 6,00,000 and you receive a 12% raise. The new salary is 6,00,000 &times; 1.12 = <strong>6,72,000</strong>. Use Mode 4 with "increased by 12%" to confirm. To find the percentage hike from an old salary to a new salary, use Mode 3.</p>
+
+      <h3>Investment Returns</h3>
+      <p>You invested 50,000 and it grew to 62,000 in one year. The return is ((62,000 &minus; 50,000) / 50,000) &times; 100 = <strong>24% increase</strong>. Enter 50,000 and 62,000 in Mode 3 to calculate this.</p>
+
+      <h3>GST Calculation</h3>
+      <p>An item costs 1,000 before GST. With 18% GST, the tax amount is 18% of 1,000 = 180, making the total 1,180. Use Mode 1 to find the GST amount, or Mode 4 to get the final price inclusive of tax.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How do you calculate a percentage?</h3>
+      <p>Divide the part by the whole, then multiply by 100. For example, 45 out of 60 is (45 / 60) &times; 100 = 75%. This works for exam scores, survey responses, task completion rates, and more.</p>
+
+      <h3>What is the percentage formula?</h3>
+      <p>The basic formula is <strong>Percentage = (Part / Whole) &times; 100</strong>. To find a specific percentage of a number, rearrange it to <strong>Result = (Percentage / 100) &times; Number</strong>.</p>
+
+      <h3>How do you calculate percentage increase?</h3>
+      <p>Use the formula: <strong>((New Value &minus; Old Value) / Old Value) &times; 100</strong>. If a price rises from 200 to 250, the increase is ((250 &minus; 200) / 200) &times; 100 = 25%.</p>
+
+      <h3>How do you find the percentage of marks?</h3>
+      <p>Divide the marks obtained by the total marks and multiply by 100. For example, if a student scores 420 out of 500, the percentage is (420 / 500) &times; 100 = 84%. This method works whether the total is 500, 600, or any other number.</p>
+
+      <h3>How do you convert a percentage to a decimal?</h3>
+      <p>Divide the percentage by 100. For example, 75% becomes 0.75. To go the other way, multiply the decimal by 100: 0.45 &times; 100 = 45%. This conversion is necessary when using percentages in mathematical formulas or spreadsheets.</p>
+
+      <h3>What is the difference between percentage difference and percentage change?</h3>
+      <p><strong>Percentage change</strong> measures the increase or decrease relative to an original value: ((New &minus; Old) / Old) &times; 100. <strong>Percentage difference</strong> compares two independent values without labelling either as the original: (|A &minus; B| / ((A + B) / 2)) &times; 100. Use percentage change when one value clearly came first (e.g. last year vs. this year). Use percentage difference when comparing two equivalent items (e.g. prices at two different stores).</p>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <ul>
+        <li><a href="/tools/gst-calculator.html">GST Calculator</a> &mdash; Calculate GST-inclusive and GST-exclusive prices for Indian tax rates.</li>
+        <li><a href="/tools/emi-calculator.html">EMI Calculator</a> &mdash; Find your monthly loan instalment for home, car, or personal loans.</li>
+        <li><a href="/tools/income-tax-calculator.html">Income Tax Calculator</a> &mdash; Estimate your income tax under old and new tax regimes.</li>
+        <li><a href="/tools/age-calculator.html">Age Calculator</a> &mdash; Calculate your exact age in years, months, and days.</li>
+      </ul>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="footerYear"></span> ToolsHub &mdash; Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a></p>
+  </footer>
+
+  <script src="/assets/js/utils.js"></script>
+  <script>
+    (function () {
+      // Dynamic footer year
+      document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+      // Tab switching
+      var tabs = document.querySelectorAll('.pct-tab');
+      var panels = document.querySelectorAll('.pct-panel');
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+          panels.forEach(function (p) { p.classList.remove('active'); });
+          tab.classList.add('active');
+          tab.setAttribute('aria-selected', 'true');
+          document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
+        });
+      });
+
+      // Helper: format number with commas
+      function fmt(n) {
+        if (isNaN(n) || !isFinite(n)) return '--';
+        var rounded = Math.round(n * 100) / 100;
+        var parts = rounded.toString().split('.');
+        parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+        return parts.join('.');
+      }
+
+      // Mode 1: What is X% of Y?
+      function calcMode1() {
+        var x = parseFloat(document.getElementById('m1x').value);
+        var y = parseFloat(document.getElementById('m1y').value);
+        if (isNaN(x) || isNaN(y)) { document.getElementById('m1result').textContent = '--'; return; }
+        var result = (x / 100) * y;
+        document.getElementById('m1result').textContent = fmt(result);
+        fireEvent('pct_x_of_y', { percentage: x, number: y, result: result });
+      }
+
+      // Mode 2: X is what % of Y?
+      function calcMode2() {
+        var x = parseFloat(document.getElementById('m2x').value);
+        var y = parseFloat(document.getElementById('m2y').value);
+        if (isNaN(x) || isNaN(y) || y === 0) { document.getElementById('m2result').textContent = '--'; return; }
+        var result = (x / y) * 100;
+        document.getElementById('m2result').textContent = fmt(result) + '%';
+        fireEvent('pct_x_is_what_of_y', { part: x, whole: y, result: result });
+      }
+
+      // Mode 3: Percentage increase/decrease from X to Y
+      function calcMode3() {
+        var x = parseFloat(document.getElementById('m3x').value);
+        var y = parseFloat(document.getElementById('m3y').value);
+        if (isNaN(x) || isNaN(y) || x === 0) { document.getElementById('m3result').textContent = '--'; return; }
+        var change = ((y - x) / Math.abs(x)) * 100;
+        var rounded = Math.round(change * 100) / 100;
+        var label = rounded >= 0 ? 'increase' : 'decrease';
+        document.getElementById('m3result').textContent = fmt(Math.abs(rounded)) + '% ' + label;
+        fireEvent('pct_change', { from: x, to: y, change: rounded });
+      }
+
+      // Mode 4: Increase/decrease X by Y%
+      function calcMode4() {
+        var x = parseFloat(document.getElementById('m4x').value);
+        var y = parseFloat(document.getElementById('m4y').value);
+        var dir = document.getElementById('m4dir').value;
+        if (isNaN(x) || isNaN(y)) { document.getElementById('m4result').textContent = '--'; return; }
+        var factor = dir === 'increase' ? (1 + y / 100) : (1 - y / 100);
+        var result = x * factor;
+        document.getElementById('m4result').textContent = fmt(result);
+        fireEvent('pct_adjust', { value: x, direction: dir, percentage: y, result: result });
+      }
+
+      // GA4 event helper
+      function fireEvent(name, params) {
+        if (typeof gtag === 'function') {
+          gtag('event', name, params);
+        }
+      }
+
+      // Debounced versions
+      var d1 = debounce(calcMode1, 250);
+      var d2 = debounce(calcMode2, 250);
+      var d3 = debounce(calcMode3, 250);
+      var d4 = debounce(calcMode4, 250);
+
+      // Attach listeners
+      document.getElementById('m1x').addEventListener('input', d1);
+      document.getElementById('m1y').addEventListener('input', d1);
+      document.getElementById('m2x').addEventListener('input', d2);
+      document.getElementById('m2y').addEventListener('input', d2);
+      document.getElementById('m3x').addEventListener('input', d3);
+      document.getElementById('m3y').addEventListener('input', d3);
+      document.getElementById('m4x').addEventListener('input', d4);
+      document.getElementById('m4y').addEventListener('input', d4);
+      document.getElementById('m4dir').addEventListener('change', d4);
+
+      // Calculate all modes on load
+      calcMode1();
+      calcMode2();
+      calcMode3();
+      calcMode4();
+    })();
+  </script>
+</body>
+</html>

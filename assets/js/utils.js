@@ -1,4 +1,4 @@
-/* PaisaPage.in — Shared Utilities */
+/* ToolsHub — Shared Utilities */
 
 function formatINR(num) {
   if (num === null || num === undefined || isNaN(num)) return '\u20B90';

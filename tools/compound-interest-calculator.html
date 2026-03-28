@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound Interest Calculator — See How Your Money Grows | ToolsHub</title>
+  <meta name="description" content="Free compound interest calculator for Indian investors. Calculate CI with yearly breakdown, compare simple vs compound interest, and see how compounding frequency affects your returns.">
+  <meta name="keywords" content="compound interest calculator, CI calculator india, compound interest formula, simple vs compound interest, power of compounding, rule of 72, compound interest calculator with frequency">
+  <link rel="canonical" href="https://tools.0110059.xyz/tools/compound-interest-calculator.html">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Compound Interest Calculator — See How Your Money Grows | ToolsHub">
+  <meta property="og:description" content="Free compound interest calculator with year-by-year breakdown. Compare simple vs compound interest and see how compounding frequency impacts your wealth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tools.0110059.xyz/tools/compound-interest-calculator.html">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="ToolsHub">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Compound Interest Calculator — How Your Money Grows | ToolsHub">
+  <meta name="twitter:description" content="Free compound interest calculator for India. Year-by-year breakdown, simple vs compound comparison, and compounding frequency analysis.">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-6478161332276600">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-ZSH9HJTRGT');</script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Compound Interest Calculator",
+    "url": "https://tools.0110059.xyz/tools/compound-interest-calculator.html",
+    "description": "Free online compound interest calculator for Indian investors. Calculates CI with year-by-year breakdown, compares simple vs compound interest, and supports multiple compounding frequencies.",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Akib Saify",
+      "url": "https://0110059.xyz"
+    }
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between compound interest and simple interest?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simple interest is calculated only on the original principal amount throughout the investment period. Compound interest is calculated on the principal plus all previously accumulated interest. For example, if you invest Rs 1,00,000 at 8% for 5 years, simple interest gives you Rs 40,000 in interest, while compound interest (annually) gives you Rs 46,933 — that extra Rs 6,933 is the interest earned on interest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Rule of 72?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Rule of 72 is a quick mental math shortcut to estimate how long it takes for your money to double at a given interest rate. Simply divide 72 by the annual interest rate. For example, at 8% annual return, your money doubles in approximately 72/8 = 9 years. At 12%, it doubles in about 6 years. This rule works best for rates between 6% and 10%."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the power of compounding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The power of compounding refers to the exponential growth that occurs when your investment returns start generating their own returns. Over time, compounding creates a snowball effect where your wealth accelerates. The longer you stay invested, the more dramatic the effect. For instance, Rs 1 lakh invested at 12% grows to Rs 3.1 lakh in 10 years but Rs 29.9 lakh in 30 years — nearly 10x more despite only 3x the time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which compounding frequency is best for investors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "More frequent compounding is always better for investors. Daily compounding yields slightly more than monthly, which yields more than quarterly, and so on. However, the practical difference between monthly and daily compounding is minimal. For savings accounts, Indian banks typically compound quarterly or daily. For fixed deposits, most banks compound quarterly. When borrowing, less frequent compounding is better for the borrower."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do banks calculate compound interest in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Indian banks typically calculate compound interest on savings accounts on a daily or quarterly basis, as per RBI guidelines. For fixed deposits, interest is usually compounded quarterly. The formula used is A = P(1 + r/n)^(nt), where P is principal, r is annual rate, n is compounding frequency, and t is time in years. The interest earned is A minus P."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the compound interest formula?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The compound interest formula is A = P(1 + r/n)^(nt), where A is the final amount, P is the principal (initial investment), r is the annual interest rate (in decimal), n is the number of times interest is compounded per year, and t is the time in years. The compound interest earned is CI = A - P. For example, Rs 1,00,000 at 8% compounded quarterly for 5 years: A = 1,00,000 × (1 + 0.08/4)^(4×5) = Rs 1,48,595."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tools.0110059.xyz/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://tools.0110059.xyz/tools/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Compound Interest Calculator",
+        "item": "https://tools.0110059.xyz/tools/compound-interest-calculator.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/" class="logo"><span>Tools</span>Hub</a>
+    <nav>
+      <a href="/tools/">Tools</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> &rsaquo; <a href="/tools/">Tools</a> &rsaquo; Compound Interest Calculator
+    </nav>
+
+    <!-- Page Title -->
+    <section class="content-section" style="margin-top:20px">
+      <h1 style="font-size:1.5rem;font-weight:700;line-height:1.3">Compound Interest Calculator &mdash; See How Your Money Grows</h1>
+      <p>Calculate compound interest on your investments with this free calculator. Enter your principal amount, interest rate, time period, and compounding frequency to see how your money grows year by year with Indian rupee formatting.</p>
+      <p class="last-updated">Last updated: March 2026</p>
+    </section>
+
+    <!-- Calculator Tool Box -->
+    <div class="tool-box">
+
+      <!-- Principal Amount -->
+      <div class="form-group range-group">
+        <label for="principal">Principal Amount (&rupee;)</label>
+        <div class="input-prefix">
+          <input type="number" id="principal" value="100000" min="1000" max="10000000" step="1000" inputmode="numeric">
+        </div>
+        <input type="range" id="principalRange" min="1000" max="10000000" step="1000" value="100000" aria-label="Principal amount slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>&rupee;1,000</span><span>&rupee;1 Crore</span></div>
+      </div>
+
+      <!-- Annual Interest Rate -->
+      <div class="form-group range-group">
+        <label for="rate">Annual Interest Rate (%)</label>
+        <input type="number" id="rate" value="8" min="1" max="30" step="0.5" inputmode="decimal">
+        <input type="range" id="rateRange" min="1" max="30" step="0.5" value="8" aria-label="Interest rate slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1%</span><span>30%</span></div>
+      </div>
+
+      <!-- Time Period -->
+      <div class="form-group range-group">
+        <label for="years">Time Period (Years)</label>
+        <input type="number" id="years" value="5" min="1" max="30" step="1" inputmode="numeric">
+        <input type="range" id="yearsRange" min="1" max="30" step="1" value="5" aria-label="Time period slider">
+        <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--text-muted);margin-top:2px"><span>1 yr</span><span>30 yrs</span></div>
+      </div>
+
+      <!-- Compounding Frequency -->
+      <div class="form-group">
+        <label for="frequency">Compounding Frequency</label>
+        <select id="frequency" style="width:100%;padding:12px;border:1px solid var(--border);border-radius:var(--radius);font-size:1rem;background:var(--bg);color:var(--text);min-height:44px">
+          <option value="1">Annually (1x per year)</option>
+          <option value="2">Semi-Annually (2x per year)</option>
+          <option value="4" selected>Quarterly (4x per year)</option>
+          <option value="12">Monthly (12x per year)</option>
+          <option value="365">Daily (365x per year)</option>
+        </select>
+      </div>
+
+      <!-- Calculate Button -->
+      <button class="btn-calculate" id="calcBtn" type="button">Calculate</button>
+    </div>
+
+    <!-- Results -->
+    <div class="result-box" id="resultBox" style="display:none">
+      <div class="result-label">Total Amount</div>
+      <div class="result-main" id="resultTotal">&rupee;0</div>
+      <div id="resultIndian" style="font-size:0.85rem;color:var(--text-muted);margin-top:4px"></div>
+
+      <div class="result-grid">
+        <div class="result-item">
+          <div class="val" id="resultPrincipal">&rupee;0</div>
+          <div class="lbl">Principal</div>
+        </div>
+        <div class="result-item positive">
+          <div class="val" id="resultCI">&rupee;0</div>
+          <div class="lbl">Compound Interest Earned</div>
+        </div>
+      </div>
+
+      <!-- Simple vs Compound Comparison -->
+      <div style="margin-top:20px;padding:16px;background:var(--bg-secondary);border-radius:var(--radius)">
+        <h3 style="font-size:1rem;margin:0 0 12px 0">Simple vs Compound Interest Comparison</h3>
+        <div class="result-grid">
+          <div class="result-item">
+            <div class="val" id="resultSI">&rupee;0</div>
+            <div class="lbl">Simple Interest</div>
+          </div>
+          <div class="result-item">
+            <div class="val" id="resultCIonly">&rupee;0</div>
+            <div class="lbl">Compound Interest</div>
+          </div>
+          <div class="result-item positive">
+            <div class="val" id="resultDiff">&rupee;0</div>
+            <div class="lbl">Extra with Compounding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Year-by-Year Breakdown -->
+    <div id="breakdownSection" style="display:none">
+      <section class="content-section">
+        <h2>Year-by-Year Breakdown</h2>
+        <div style="overflow-x:auto">
+          <table class="formula-table" id="breakdownTable" style="width:100%">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Opening Balance</th>
+                <th>Interest Earned</th>
+                <th>Closing Balance</th>
+              </tr>
+            </thead>
+            <tbody id="breakdownBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- How to Use -->
+    <section class="content-section">
+      <h2>How to Use This Compound Interest Calculator</h2>
+      <ol>
+        <li><strong>Enter the principal amount</strong> &mdash; the initial lump sum you plan to invest or deposit. For example, &rupee;1,00,000 for a fixed deposit.</li>
+        <li><strong>Set the annual interest rate</strong> &mdash; the yearly rate of return offered by your bank or investment. Current FD rates in India range from 6% to 8% for most banks.</li>
+        <li><strong>Choose the time period</strong> &mdash; how many years you plan to keep the money invested. Longer durations benefit dramatically from compounding.</li>
+        <li><strong>Select compounding frequency</strong> &mdash; how often interest is added to the principal. Indian banks typically compound quarterly for FDs and daily or quarterly for savings accounts.</li>
+        <li><strong>View your results</strong> &mdash; the calculator instantly shows the total maturity amount, compound interest earned, a year-by-year breakdown table, and a comparison against simple interest.</li>
+      </ol>
+    </section>
+
+    <!-- CI Formula Section -->
+    <section class="content-section">
+      <h2>Compound Interest Formula Explained</h2>
+      <p>Compound interest is the interest calculated on both the initial principal and the accumulated interest from previous periods. Unlike simple interest, which only grows linearly, compound interest grows exponentially &mdash; making it a powerful wealth-building tool.</p>
+      <p>The standard compound interest formula is:</p>
+      <div style="background:var(--bg-secondary);padding:16px;border-radius:var(--radius);margin:12px 0;font-family:monospace;font-size:0.95rem;overflow-x:auto">
+        A = P &times; (1 + r/n)<sup>n&times;t</sup>
+      </div>
+      <p>Where:</p>
+      <table class="formula-table">
+        <tr><th>Variable</th><th>Meaning</th></tr>
+        <tr><td><strong>A</strong></td><td>Final maturity amount (principal + interest)</td></tr>
+        <tr><td><strong>P</strong></td><td>Principal (initial investment), e.g., &rupee;1,00,000</td></tr>
+        <tr><td><strong>r</strong></td><td>Annual interest rate (in decimal), e.g., 8% = 0.08</td></tr>
+        <tr><td><strong>n</strong></td><td>Number of times interest is compounded per year (4 for quarterly)</td></tr>
+        <tr><td><strong>t</strong></td><td>Time period in years</td></tr>
+      </table>
+      <p>The compound interest earned is: <strong>CI = A &minus; P</strong></p>
+
+      <h3>Worked Example</h3>
+      <p>Suppose you invest <strong>&rupee;1,00,000</strong> at <strong>8% per annum</strong>, compounded <strong>quarterly</strong>, for <strong>5 years</strong>:</p>
+      <ul>
+        <li>P = 1,00,000 | r = 0.08 | n = 4 | t = 5</li>
+        <li>A = 1,00,000 &times; (1 + 0.08/4)<sup>4&times;5</sup></li>
+        <li>A = 1,00,000 &times; (1 + 0.02)<sup>20</sup></li>
+        <li>A = 1,00,000 &times; 1.4859</li>
+        <li>A = <strong>&rupee;1,48,595</strong></li>
+        <li>Compound Interest = &rupee;1,48,595 &minus; &rupee;1,00,000 = <strong>&rupee;48,595</strong></li>
+      </ul>
+      <p>Compare this with simple interest on the same investment: SI = 1,00,000 &times; 0.08 &times; 5 = &rupee;40,000. That means compounding earned you an extra <strong>&rupee;8,595</strong> &mdash; interest on your interest.</p>
+    </section>
+
+    <!-- Simple vs Compound Interest -->
+    <section class="content-section">
+      <h2>Simple Interest vs Compound Interest</h2>
+      <p>Understanding the difference between simple and compound interest is fundamental to making smart financial decisions in India, whether you are opening a bank FD, investing in PPF, or taking a loan.</p>
+      <p><strong>Simple Interest (SI)</strong> is calculated only on the original principal: <code>SI = P &times; r &times; t</code>. The interest amount remains the same each year. If you invest &rupee;1,00,000 at 8%, you earn &rupee;8,000 every year &mdash; flat, with no growth.</p>
+      <p><strong>Compound Interest (CI)</strong> is calculated on the principal plus all previously earned interest. Each year, you earn interest on a larger amount. In the first year you earn &rupee;8,000, but in the second year you earn interest on &rupee;1,08,000, giving you &rupee;8,640 &mdash; and this gap keeps widening over time.</p>
+      <p>Over short periods (1&ndash;2 years), the difference is modest. But over 10, 20, or 30 years, compound interest can generate several times more wealth than simple interest. This exponential growth is why financial advisors urge you to start investing early and let compounding do the heavy lifting.</p>
+    </section>
+
+    <!-- Rule of 72 -->
+    <section class="content-section">
+      <h2>The Rule of 72 &mdash; A Quick Doubling Shortcut</h2>
+      <p>The Rule of 72 is a simple and widely used mental math trick to estimate how many years it takes for your investment to double at a given compound interest rate. Just divide 72 by the annual interest rate:</p>
+      <div style="background:var(--bg-secondary);padding:16px;border-radius:var(--radius);margin:12px 0;font-family:monospace;font-size:0.95rem;overflow-x:auto">
+        Years to double &asymp; 72 &divide; Annual Interest Rate
+      </div>
+      <p>For example:</p>
+      <ul>
+        <li>At <strong>6%</strong> (typical savings account): 72 / 6 = <strong>12 years</strong> to double</li>
+        <li>At <strong>8%</strong> (bank FD rate): 72 / 8 = <strong>9 years</strong> to double</li>
+        <li>At <strong>12%</strong> (equity mutual funds average): 72 / 12 = <strong>6 years</strong> to double</li>
+        <li>At <strong>15%</strong> (aggressive equity): 72 / 15 = <strong>4.8 years</strong> to double</li>
+      </ul>
+      <p>This rule works best for interest rates between 6% and 10% but provides a reasonable approximation across a wider range. It is a handy tool for quick comparisons when evaluating different investment options in India &mdash; whether it is a bank FD, PPF, NPS, or mutual funds.</p>
+    </section>
+
+    <!-- Power of Compounding -->
+    <section class="content-section">
+      <h2>The Power of Compounding &mdash; Why Starting Early Matters</h2>
+      <p>Compounding is often called the eighth wonder of the world, and for good reason. The earlier you start investing, the more time your money has to compound and grow exponentially. Consider this example with two investors:</p>
+      <ul>
+        <li><strong>Investor A</strong> invests &rupee;1,00,000 at age 25 at 10% annual compound interest and leaves it untouched until age 55 (30 years). Final amount: <strong>&rupee;17,44,940</strong>.</li>
+        <li><strong>Investor B</strong> invests the same &rupee;1,00,000 at age 35 at 10% for 20 years until age 55. Final amount: <strong>&rupee;6,72,750</strong>.</li>
+      </ul>
+      <p>Investor A earns more than <strong>&rupee;10 lakh extra</strong> &mdash; simply by starting 10 years earlier. Both invested the same principal and earned the same rate, but the extra decade of compounding made an enormous difference. This is the core lesson: time in the market beats timing the market.</p>
+      <p>In the Indian context, instruments like PPF (7.1%), ELSS funds (historically 12&ndash;15%), and even bank FDs all benefit from compounding. The key is to start as early as possible, reinvest your returns, and let time work in your favour.</p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details class="faq-item">
+        <summary>What is the difference between compound interest and simple interest?</summary>
+        <div class="faq-answer">
+          <p>Simple interest is calculated only on the original principal amount throughout the investment period, using the formula SI = P &times; r &times; t. Compound interest is calculated on the principal plus all previously accumulated interest, using A = P(1 + r/n)^(nt). For example, if you invest &rupee;1,00,000 at 8% for 5 years, simple interest gives you &rupee;40,000 in interest, while compound interest (compounded quarterly) gives you &rupee;48,595 &mdash; that extra &rupee;8,595 is the interest earned on interest. The longer the duration, the wider this gap becomes.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the Rule of 72?</summary>
+        <div class="faq-answer">
+          <p>The Rule of 72 is a quick mental math shortcut to estimate how long it takes for your money to double at a given interest rate. Simply divide 72 by the annual interest rate. For example, at 8% annual return, your money doubles in approximately 72 / 8 = 9 years. At 12%, it doubles in about 6 years. This rule works best for rates between 6% and 10% and is widely used by financial planners for quick estimates.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the power of compounding?</summary>
+        <div class="faq-answer">
+          <p>The power of compounding refers to the exponential growth that occurs when your investment returns start generating their own returns. Over time, compounding creates a snowball effect where your wealth accelerates dramatically. For instance, &rupee;1,00,000 invested at 12% grows to about &rupee;3,10,585 in 10 years but &rupee;29,95,992 in 30 years &mdash; nearly 10 times more despite only 3 times the duration. This is why starting early is the single most important factor in building long-term wealth.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which compounding frequency is best for investors?</summary>
+        <div class="faq-answer">
+          <p>More frequent compounding is always better for investors and depositors. Daily compounding yields slightly more than monthly, which yields more than quarterly, and so on. However, the practical difference between monthly and daily compounding is quite small. For savings accounts, Indian banks typically compound quarterly or daily. For fixed deposits, most banks compound quarterly. When borrowing money, less frequent compounding is better for the borrower as it reduces the total interest payable.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do banks calculate compound interest in India?</summary>
+        <div class="faq-answer">
+          <p>Indian banks follow RBI guidelines for interest calculation. Savings accounts typically earn interest compounded daily or quarterly on the daily closing balance. Fixed deposits usually compound interest quarterly. The formula used is A = P(1 + r/n)^(nt). Interest on loans (home loans, personal loans) is generally calculated on a reducing balance basis. Since April 2010, RBI mandated that banks must use the daily balance method for calculating savings account interest.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the compound interest formula?</summary>
+        <div class="faq-answer">
+          <p>The compound interest formula is A = P(1 + r/n)^(nt), where A is the final amount, P is the principal (initial investment), r is the annual interest rate as a decimal (e.g., 8% = 0.08), n is the number of times interest is compounded per year (1 for annually, 4 for quarterly, 12 for monthly, 365 for daily), and t is the time in years. The compound interest earned is CI = A &minus; P. For quick calculations, you can use this ToolsHub compound interest calculator which handles the math for you.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Related Tools -->
+    <section class="content-section">
+      <h2>Related Tools</h2>
+      <div class="related-tools">
+        <a href="/tools/fd-calculator.html" class="related-tool-card">
+          <div class="rtc-title">FD Calculator</div>
+          <div class="rtc-desc">Estimate maturity amount for fixed deposits</div>
+        </a>
+        <a href="/tools/sip-calculator.html" class="related-tool-card">
+          <div class="rtc-title">SIP Calculator</div>
+          <div class="rtc-desc">Calculate mutual fund SIP returns over time</div>
+        </a>
+        <a href="/tools/ppf-calculator.html" class="related-tool-card">
+          <div class="rtc-title">PPF Calculator</div>
+          <div class="rtc-desc">Calculate Public Provident Fund returns over 15 years</div>
+        </a>
+        <a href="/tools/emi-calculator.html" class="related-tool-card">
+          <div class="rtc-title">EMI Calculator</div>
+          <div class="rtc-desc">Calculate monthly EMI for home, car, or personal loans</div>
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /container -->
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/privacy.html">Privacy Policy</a>
+      <a href="/pages/disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; <script>document.write(new Date().getFullYear())</script> ToolsHub. Built by <a href="https://0110059.xyz" target="_blank" rel="noopener">Akib Saify</a></p>
+  </footer>
+
+  <!-- Utilities -->
+  <script src="/assets/js/utils.js"></script>
+
+  <script>
+  (function() {
+    var principalInput = document.getElementById('principal');
+    var principalRange = document.getElementById('principalRange');
+    var rateInput      = document.getElementById('rate');
+    var rateRange      = document.getElementById('rateRange');
+    var yearsInput     = document.getElementById('years');
+    var yearsRange     = document.getElementById('yearsRange');
+    var frequencyInput = document.getElementById('frequency');
+    var calcBtn        = document.getElementById('calcBtn');
+    var resultBox      = document.getElementById('resultBox');
+    var breakdownSec   = document.getElementById('breakdownSection');
+
+    // Sync number inputs with range sliders
+    function syncPair(numInput, rangeInput) {
+      numInput.addEventListener('input', function() { rangeInput.value = numInput.value; debouncedCalc(); });
+      rangeInput.addEventListener('input', function() { numInput.value = rangeInput.value; debouncedCalc(); });
+    }
+    syncPair(principalInput, principalRange);
+    syncPair(rateInput, rateRange);
+    syncPair(yearsInput, yearsRange);
+    frequencyInput.addEventListener('change', debouncedCalc);
+
+    function calculate() {
+      var P = parseFloat(principalInput.value) || 0;
+      var r = parseFloat(rateInput.value) || 0;
+      var t = parseInt(yearsInput.value) || 0;
+      var n = parseInt(frequencyInput.value) || 4;
+
+      // Clamp values
+      if (P < 1000) P = 1000;
+      if (P > 10000000) P = 10000000;
+      if (r < 1) r = 1;
+      if (r > 30) r = 30;
+      if (t < 1) t = 1;
+      if (t > 30) t = 30;
+
+      // Compound Interest: A = P(1 + r/n)^(nt)
+      var A = calculateCI(P, r, n, t);
+      var CI = A - P;
+
+      // Simple Interest: SI = P * r * t / 100
+      var SI = P * r * t / 100;
+      var diff = CI - SI;
+
+      // Update main results
+      document.getElementById('resultTotal').textContent     = formatINR(Math.round(A));
+      document.getElementById('resultIndian').textContent    = '~ \u20B9' + formatIndian(Math.round(A));
+      document.getElementById('resultPrincipal').textContent = formatINR(P);
+      document.getElementById('resultCI').textContent        = formatINR(Math.round(CI));
+
+      // Simple vs Compound comparison
+      document.getElementById('resultSI').textContent     = formatINR(Math.round(SI));
+      document.getElementById('resultCIonly').textContent  = formatINR(Math.round(CI));
+      document.getElementById('resultDiff').textContent    = formatINR(Math.round(diff));
+
+      resultBox.style.display = 'block';
+
+      // Year-by-year breakdown
+      var tbody = document.getElementById('breakdownBody');
+      tbody.innerHTML = '';
+      var balance = P;
+      for (var y = 1; y <= t; y++) {
+        var newBalance = calculateCI(P, r, n, y);
+        var yearInterest = newBalance - balance;
+        var row = document.createElement('tr');
+        row.innerHTML = '<td>' + y + '</td>' +
+          '<td>' + formatINR(Math.round(balance)) + '</td>' +
+          '<td style="color:var(--success)">' + formatINR(Math.round(yearInterest)) + '</td>' +
+          '<td><strong>' + formatINR(Math.round(newBalance)) + '</strong></td>';
+        tbody.appendChild(row);
+        balance = newBalance;
+      }
+      breakdownSec.style.display = 'block';
+
+      // GA4 event
+      if (typeof gtag === 'function') {
+        gtag('event', 'calculate_ci', {
+          principal: P,
+          annual_rate: r,
+          period_years: t,
+          frequency: n,
+          total_amount: Math.round(A)
+        });
+      }
+    }
+
+    var debouncedCalc = debounce(calculate, 300);
+
+    calcBtn.addEventListener('click', calculate);
+
+    // Calculate on page load with defaults
+    calculate();
+  })();
+  </script>
+
+</body>
+</html>
