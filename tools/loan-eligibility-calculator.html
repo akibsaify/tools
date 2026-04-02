@@ -53,7 +53,11 @@
       "price": "0",
       "priceCurrency": "INR"
     },
-    "description": "Free loan eligibility calculator for India. Check your maximum loan amount based on monthly income, existing EMIs, interest rate and loan tenure using FOIR-based calculation."
+    "description": "Free loan eligibility calculator for India. Check your maximum loan amount based on monthly income, existing EMIs, interest rate and loan tenure using FOIR-based calculation.",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".instant-answer", "h1", ".faq-item summary"]
+    }
   }
   </script>
 
@@ -135,6 +139,7 @@
     <a href="/" class="logo"><span>Tools</span>Hub</a>
     <nav>
       <a href="/tools/">Tools</a>
+      <a href="https://deals.akibsaify.in/" target="_blank" rel="noopener">Deals</a>
       <a href="/pages/about.html">About</a>
     </nav>
   </header>
@@ -150,6 +155,11 @@
     <h1 style="font-size:1.6rem; font-weight:700; margin-top:20px;">Loan Eligibility Calculator &mdash; Check How Much Loan You Can Get</h1>
     <p class="last-updated" style="color:var(--text-secondary); margin-bottom:4px;">Find out the maximum loan amount you are eligible for based on your income, existing obligations and loan terms.</p>
     <p class="last-updated">Last updated: March 2026</p>
+
+    <!-- Instant Answer (AEO) -->
+    <div class="instant-answer" style="background:linear-gradient(135deg,#f0f7ff,#e8f4f8);border-left:4px solid var(--primary,#2563eb);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin-bottom:1.5rem;font-size:0.95rem;line-height:1.6;">
+      <strong>Quick Answer:</strong> With a monthly salary of ₹50,000, existing EMI of ₹5,000, and interest rate of 8.5% for 20 years, you may be eligible for a loan of approximately <strong>₹23,50,000</strong>. Check your eligibility below.
+    </div>
 
     <!-- Tool Box -->
     <div class="tool-box">

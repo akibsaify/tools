@@ -33,7 +33,11 @@
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "All",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
-    "author": { "@type": "Person", "name": "Akib Saify", "url": "https://akibsaify.in" }
+    "author": { "@type": "Person", "name": "Akib Saify", "url": "https://akibsaify.in" },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".instant-answer", "h1", ".faq-item summary"]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -80,6 +84,7 @@
     <a href="/" class="logo"><span>Tools</span>Hub</a>
     <nav>
       <a href="/tools/">Tools</a>
+      <a href="https://deals.akibsaify.in/" target="_blank" rel="noopener">Deals</a>
       <a href="/pages/about.html">About</a>
     </nav>
   </header>
@@ -92,6 +97,11 @@
     <h1 class="page-title">Electricity Bill Calculator &mdash; Estimate Your Monthly Bijli Bill</h1>
     <p class="page-subtitle">Select your electricity provider, enter units consumed, and get an instant slab-wise bill breakdown with fixed charges and surcharges.</p>
     <p class="last-updated">Last updated: March 2026</p>
+
+    <!-- Instant Answer (AEO) -->
+    <div class="instant-answer" style="background:linear-gradient(135deg,#f0f7ff,#e8f4f8);border-left:4px solid var(--primary,#2563eb);padding:1rem 1.25rem;border-radius:0 8px 8px 0;margin-bottom:1.5rem;font-size:0.95rem;line-height:1.6;">
+      <strong>Quick Answer:</strong> A household using 300 units/month at ₹6/unit with a ₹50 fixed charge pays approximately <strong>₹1,850/month</strong>. Calculate your electricity bill below.
+    </div>
 
     <!-- ── TOOL BOX ── -->
     <div class="tool-box">
