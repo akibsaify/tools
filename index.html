@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ToolsHub — Free Online Calculators for India | EMI, SIP, Tax & More</title>
-  <meta name="description" content="Free Indian financial calculators — EMI, SIP, income tax, electricity bill, FD, GST & more. Make smarter money decisions with ToolsHub.">
-  <meta name="keywords" content="online calculator india, emi calculator, sip calculator, income tax calculator, electricity bill calculator, financial tools india">
+  <title>ToolsHub — Free Online Calculators & Tools</title>
+  <meta name="description" content="Free online calculators for finance, math, health & everyday life. EMI, mortgage, tax, BMI, percentage, age & more. Instant results, no signup required.">
+  <meta name="keywords" content="free online calculator, emi calculator, mortgage calculator, tax calculator, bmi calculator, percentage calculator, financial tools, math tools">
   <link rel="canonical" href="https://tools.akibsaify.in/">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="ToolsHub — Free Online Calculators for India">
-  <meta property="og:description" content="Free Indian financial calculators — EMI, SIP, income tax, electricity bill & more.">
+  <meta property="og:title" content="ToolsHub — Free Online Calculators & Tools">
+  <meta property="og:description" content="Free online calculators for finance, math, health & everyday life. Instant results, no signup.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tools.akibsaify.in/">
-  <meta property="og:locale" content="en_IN">
+  <meta property="og:locale" content="en">
   <meta property="og:image" content="https://tools.akibsaify.in/images/og-default.svg">
   <meta property="og:image:width" content="1200">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ToolsHub — Free Online Calculators for India">
-  <meta name="twitter:description" content="Free Indian financial calculators — EMI, SIP, income tax, electricity bill & more.">
+  <meta name="twitter:title" content="ToolsHub — Free Online Calculators & Tools">
+  <meta name="twitter:description" content="Free online calculators for finance, math, health & everyday life. Instant results, no signup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <meta name="google-adsense-account" content="ca-pub-6478161332276600">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZSH9HJTRGT"></script>
@@ -29,7 +32,12 @@
     "@type": "WebSite",
     "name": "ToolsHub",
     "url": "https://tools.akibsaify.in",
-    "description": "Free online financial calculators and utility tools for India",
+    "description": "Free online calculators and utility tools for finance, math, health and everyday life",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tools.akibsaify.in/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
     "author": {
       "@type": "Person",
       "name": "Akib Saify",
@@ -39,106 +47,173 @@
   </script>
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <a href="/" class="logo"><span>Tools</span>Hub</a>
     <nav>
-      <a href="/tools/">Tools</a>
-      <a href="https://deals.akibsaify.in/" target="_blank" rel="noopener">Deals</a>
+      <a href="/tools/">All Tools</a>
       <a href="/pages/about.html">About</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Smart Money Tools for India</h1>
-    <p>Free calculators to help you make better financial decisions — EMI, SIP, tax, bills & more.</p>
+    <h1>Calculate Anything, Instantly</h1>
+    <p>Free online calculators for finance, math, health and everyday life. No signup, no fees — just answers.</p>
+    <div class="search-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+      <input type="search" id="tool-search" placeholder="Search tools... (e.g. EMI, BMI, percentage)" autocomplete="off" aria-label="Search tools">
+    </div>
+    <div class="hero-badges">
+      <span class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+        100% Free
+      </span>
+      <span class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+        No Signup
+      </span>
+      <span class="hero-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+        Private &amp; Secure
+      </span>
+    </div>
   </section>
 
+  <!-- Category Filter -->
+  <div class="category-bar" id="category-bar">
+    <button class="cat-pill active" data-cat="all">All Tools</button>
+    <button class="cat-pill" data-cat="finance">Finance &amp; Banking</button>
+    <button class="cat-pill" data-cat="tax">Tax &amp; Salary</button>
+    <button class="cat-pill" data-cat="health">Health</button>
+    <button class="cat-pill" data-cat="everyday">Math &amp; Everyday</button>
+  </div>
+
+  <!-- Tools Grid -->
   <div class="tools-grid" id="tools-grid">
-    <a href="/tools/emi-calculator.html" class="tool-card">
+    <!-- Finance & Banking -->
+    <a href="/tools/emi-calculator.html" class="tool-card" data-cat="finance" data-keywords="emi loan home car personal monthly installment mortgage">
       <div class="tc-icon">🏦</div>
       <div class="tc-title">EMI Calculator</div>
       <div class="tc-desc">Calculate monthly EMI for home, car & personal loans</div>
+      <span class="tc-cat">Finance</span>
     </a>
-    <a href="/tools/sip-calculator.html" class="tool-card">
+    <a href="/tools/sip-calculator.html" class="tool-card" data-cat="finance" data-keywords="sip mutual fund investment returns systematic plan">
       <div class="tc-icon">📈</div>
       <div class="tc-title">SIP Calculator</div>
       <div class="tc-desc">Plan mutual fund SIP investments & estimate returns</div>
+      <span class="tc-cat">Finance</span>
     </a>
-    <a href="/tools/electricity-bill-calculator.html" class="tool-card">
-      <div class="tc-icon">💡</div>
-      <div class="tc-title">Electricity Bill Calculator</div>
-      <div class="tc-desc">Estimate your monthly bijli bill by units consumed</div>
-    </a>
-    <a href="/tools/income-tax-calculator.html" class="tool-card">
-      <div class="tc-icon">🧾</div>
-      <div class="tc-title">Income Tax Calculator</div>
-      <div class="tc-desc">Compare old vs new tax regime for FY 2025-26</div>
-    </a>
-    <a href="/tools/gst-calculator.html" class="tool-card">
-      <div class="tc-icon">🏷️</div>
-      <div class="tc-title">GST Calculator</div>
-      <div class="tc-desc">Calculate GST amount and total price instantly</div>
-    </a>
-    <a href="/tools/fd-calculator.html" class="tool-card">
+    <a href="/tools/fd-calculator.html" class="tool-card" data-cat="finance" data-keywords="fd fixed deposit maturity interest bank savings">
       <div class="tc-icon">🏧</div>
       <div class="tc-title">FD Calculator</div>
-      <div class="tc-desc">Calculate fixed deposit maturity amount & interest</div>
+      <div class="tc-desc">Calculate fixed deposit maturity amount & interest earned</div>
+      <span class="tc-cat">Finance</span>
     </a>
-    <a href="/tools/percentage-calculator.html" class="tool-card">
-      <div class="tc-icon">%</div>
-      <div class="tc-title">Percentage Calculator</div>
-      <div class="tc-desc">Quick percentage calculations for everyday use</div>
-    </a>
-    <a href="/tools/age-calculator.html" class="tool-card">
-      <div class="tc-icon">🎂</div>
-      <div class="tc-title">Age Calculator</div>
-      <div class="tc-desc">Calculate your exact age in years, months & days</div>
-    </a>
-    <a href="/tools/compound-interest-calculator.html" class="tool-card">
+    <a href="/tools/compound-interest-calculator.html" class="tool-card" data-cat="finance" data-keywords="compound interest investment growth savings money compounding">
       <div class="tc-icon">💰</div>
       <div class="tc-title">Compound Interest Calculator</div>
       <div class="tc-desc">See how compounding grows your money over time</div>
+      <span class="tc-cat">Finance</span>
     </a>
-    <a href="/tools/salary-calculator.html" class="tool-card">
-      <div class="tc-icon">💼</div>
-      <div class="tc-title">Salary Calculator</div>
-      <div class="tc-desc">Convert CTC to in-hand salary with deductions</div>
-    </a>
-    <a href="/tools/ppf-calculator.html" class="tool-card">
+    <a href="/tools/ppf-calculator.html" class="tool-card" data-cat="finance" data-keywords="ppf public provident fund maturity growth savings">
       <div class="tc-icon">🏛️</div>
       <div class="tc-title">PPF Calculator</div>
       <div class="tc-desc">Estimate your PPF maturity value & yearly growth</div>
+      <span class="tc-cat">Finance</span>
     </a>
-    <a href="/tools/bmi-calculator.html" class="tool-card">
-      <div class="tc-icon">⚖️</div>
-      <div class="tc-title">BMI Calculator</div>
-      <div class="tc-desc">Check your Body Mass Index and health category</div>
-    </a>
-    <a href="/tools/hra-calculator.html" class="tool-card">
-      <div class="tc-icon">🏠</div>
-      <div class="tc-title">HRA Calculator</div>
-      <div class="tc-desc">Calculate your HRA tax exemption amount</div>
-    </a>
-    <a href="/tools/gratuity-calculator.html" class="tool-card">
-      <div class="tc-icon">🎖️</div>
-      <div class="tc-title">Gratuity Calculator</div>
-      <div class="tc-desc">Calculate gratuity amount based on years of service</div>
-    </a>
-    <a href="/tools/tds-calculator.html" class="tool-card">
-      <div class="tc-icon">🧾</div>
-      <div class="tc-title">TDS Calculator</div>
-      <div class="tc-desc">Calculate Tax Deducted at Source on payments</div>
-    </a>
-    <a href="/tools/loan-eligibility-calculator.html" class="tool-card">
-      <div class="tc-icon">🏦</div>
+    <a href="/tools/loan-eligibility-calculator.html" class="tool-card" data-cat="finance" data-keywords="loan eligibility income home car personal how much borrow">
+      <div class="tc-icon">💳</div>
       <div class="tc-title">Loan Eligibility Calculator</div>
-      <div class="tc-desc">Check how much loan you can get based on income</div>
+      <div class="tc-desc">Check how much loan you can get based on your income</div>
+      <span class="tc-cat">Finance</span>
     </a>
-    <a href="/tools/rent-affordability-calculator.html" class="tool-card">
+    <a href="/tools/rent-affordability-calculator.html" class="tool-card" data-cat="finance" data-keywords="rent affordability housing budget income how much rent">
       <div class="tc-icon">🔑</div>
       <div class="tc-title">Rent Affordability Calculator</div>
       <div class="tc-desc">Find out how much rent you can comfortably afford</div>
+      <span class="tc-cat">Finance</span>
     </a>
+
+    <!-- Tax & Salary -->
+    <a href="/tools/income-tax-calculator.html" class="tool-card" data-cat="tax" data-keywords="income tax old new regime filing return salary deduction">
+      <div class="tc-icon">🧾</div>
+      <div class="tc-title">Income Tax Calculator</div>
+      <div class="tc-desc">Compare old vs new tax regime & estimate your tax liability</div>
+      <span class="tc-cat">Tax</span>
+    </a>
+    <a href="/tools/gst-calculator.html" class="tool-card" data-cat="tax" data-keywords="gst goods service tax inclusive exclusive vat">
+      <div class="tc-icon">🏷️</div>
+      <div class="tc-title">GST Calculator</div>
+      <div class="tc-desc">Calculate GST amount and total price instantly</div>
+      <span class="tc-cat">Tax</span>
+    </a>
+    <a href="/tools/tds-calculator.html" class="tool-card" data-cat="tax" data-keywords="tds tax deducted source payment withholding">
+      <div class="tc-icon">📋</div>
+      <div class="tc-title">TDS Calculator</div>
+      <div class="tc-desc">Calculate Tax Deducted at Source on various payments</div>
+      <span class="tc-cat">Tax</span>
+    </a>
+    <a href="/tools/salary-calculator.html" class="tool-card" data-cat="tax" data-keywords="salary ctc in hand take home pay gross net deductions">
+      <div class="tc-icon">💼</div>
+      <div class="tc-title">Salary Calculator</div>
+      <div class="tc-desc">Convert CTC to in-hand salary with all deductions</div>
+      <span class="tc-cat">Tax</span>
+    </a>
+    <a href="/tools/hra-calculator.html" class="tool-card" data-cat="tax" data-keywords="hra house rent allowance exemption tax savings">
+      <div class="tc-icon">🏠</div>
+      <div class="tc-title">HRA Calculator</div>
+      <div class="tc-desc">Calculate your HRA tax exemption amount</div>
+      <span class="tc-cat">Tax</span>
+    </a>
+    <a href="/tools/gratuity-calculator.html" class="tool-card" data-cat="tax" data-keywords="gratuity years service retirement employment benefit">
+      <div class="tc-icon">🎖️</div>
+      <div class="tc-title">Gratuity Calculator</div>
+      <div class="tc-desc">Calculate gratuity amount based on years of service</div>
+      <span class="tc-cat">Tax</span>
+    </a>
+
+    <!-- Health -->
+    <a href="/tools/bmi-calculator.html" class="tool-card" data-cat="health" data-keywords="bmi body mass index weight height health fitness overweight">
+      <div class="tc-icon">⚖️</div>
+      <div class="tc-title">BMI Calculator</div>
+      <div class="tc-desc">Check your Body Mass Index and health category</div>
+      <span class="tc-cat">Health</span>
+    </a>
+
+    <!-- Math & Everyday -->
+    <a href="/tools/percentage-calculator.html" class="tool-card" data-cat="everyday" data-keywords="percentage percent change increase decrease discount markup">
+      <div class="tc-icon">%</div>
+      <div class="tc-title">Percentage Calculator</div>
+      <div class="tc-desc">Quick percentage calculations for everyday use</div>
+      <span class="tc-cat">Math</span>
+    </a>
+    <a href="/tools/age-calculator.html" class="tool-card" data-cat="everyday" data-keywords="age birthday date birth years months days old how">
+      <div class="tc-icon">🎂</div>
+      <div class="tc-title">Age Calculator</div>
+      <div class="tc-desc">Calculate your exact age in years, months & days</div>
+      <span class="tc-cat">Everyday</span>
+    </a>
+    <a href="/tools/electricity-bill-calculator.html" class="tool-card" data-cat="everyday" data-keywords="electricity bill units kwh power consumption energy cost utility">
+      <div class="tc-icon">💡</div>
+      <div class="tc-title">Electricity Bill Calculator</div>
+      <div class="tc-desc">Estimate your monthly electricity bill by units consumed</div>
+      <span class="tc-cat">Everyday</span>
+    </a>
+
+    <!-- No results state -->
+    <div class="no-results" id="no-results" style="display:none">
+      <p>No tools found. Try a different search term.</p>
+    </div>
+  </div>
+
+  <!-- AdSense Ad -->
+  <div style="margin:2rem auto;text-align:center;max-width:1080px;padding:0 20px;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6478161332276600"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <footer class="site-footer">
@@ -147,13 +222,59 @@
       <a href="/pages/privacy-policy.html">Privacy Policy</a>
       <a href="/pages/disclaimer.html">Disclaimer</a>
     </div>
-    <div class="footer-links" style="margin-top:8px;font-size:0.85rem;">
+    <div class="footer-links" style="margin-top:8px;">
       <a href="https://deals.akibsaify.in/" target="_blank" rel="noopener">DealDrops</a>
       <a href="https://habits.akibsaify.in/" target="_blank" rel="noopener">HabitStack</a>
       <a href="https://akibsaify.in/" target="_blank" rel="noopener">akibsaify.in</a>
-      <a href="https://www.youtube.com/@QuizDropDaily" target="_blank" rel="noopener">QuizDropDaily</a>
     </div>
-    <p>&copy; <span id="footerYear"></span> ToolsHub. Built by <a href="https://akibsaify.in" target="_blank" rel="noopener">Akib Saify</a>.</p>
+    <p style="margin-top:10px">&copy; <span id="footerYear"></span> ToolsHub. Built by <a href="https://akibsaify.in" target="_blank" rel="noopener">Akib Saify</a>.</p>
   </footer>
+
+  <script>
+  (function() {
+    // Footer year
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    // Header scroll effect
+    var header = document.getElementById('site-header');
+    window.addEventListener('scroll', function() {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // Search
+    var searchInput = document.getElementById('tool-search');
+    var cards = document.querySelectorAll('.tool-card');
+    var noResults = document.getElementById('no-results');
+    var catBar = document.getElementById('category-bar');
+    var pills = catBar.querySelectorAll('.cat-pill');
+
+    function filterTools() {
+      var query = searchInput.value.toLowerCase().trim();
+      var activeCat = catBar.querySelector('.cat-pill.active').dataset.cat;
+      var visible = 0;
+
+      cards.forEach(function(card) {
+        var matchesCat = activeCat === 'all' || card.dataset.cat === activeCat;
+        var text = (card.dataset.keywords || '') + ' ' + card.textContent.toLowerCase();
+        var matchesSearch = !query || text.indexOf(query) > -1;
+        var show = matchesCat && matchesSearch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      noResults.style.display = visible === 0 ? '' : 'none';
+    }
+
+    searchInput.addEventListener('input', filterTools);
+
+    pills.forEach(function(pill) {
+      pill.addEventListener('click', function() {
+        pills.forEach(function(p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        filterTools();
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
