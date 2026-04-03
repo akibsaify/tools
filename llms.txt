@@ -1,0 +1,58 @@
+# ToolsHub — tools.akibsaify.in
+
+> Free online calculators for Indian users — EMI, SIP, Income Tax, GST, FD, PPF, Salary, BMI, and more. All calculations use Indian tax rules, rates, and standards. No login required, works on any device.
+
+## What is ToolsHub?
+ToolsHub is a free collection of 17 financial, tax, and health calculators built for Indian users. Every calculator includes step-by-step instructions, real formulas, worked examples in Indian Rupees (INR), and FAQs covering Indian-specific rules (new tax regime, GST slabs, PF rules, etc.). No ads interrupting calculations, no sign-up walls.
+
+## Available Calculators
+
+### Financial Calculators
+- [EMI Calculator](https://tools.akibsaify.in/tools/emi-calculator.html) — Monthly EMI for home, car, and personal loans using reducing balance method
+- [SIP Calculator](https://tools.akibsaify.in/tools/sip-calculator.html) — Mutual fund SIP returns with compounding over time
+- [FD Calculator](https://tools.akibsaify.in/tools/fd-calculator.html) — Fixed deposit maturity amount with quarterly compounding
+- [Compound Interest Calculator](https://tools.akibsaify.in/tools/compound-interest-calculator.html) — Compound interest with flexible compounding frequencies
+- [PPF Calculator](https://tools.akibsaify.in/tools/ppf-calculator.html) — Public Provident Fund maturity with current Indian govt rates
+- [Loan Eligibility Calculator](https://tools.akibsaify.in/tools/loan-eligibility-calculator.html) — Maximum loan amount based on income and existing EMIs
+- [Rent Affordability Calculator](https://tools.akibsaify.in/tools/rent-affordability-calculator.html) — How much rent you can afford based on salary
+
+### Tax Calculators
+- [Income Tax Calculator](https://tools.akibsaify.in/tools/income-tax-calculator.html) — Indian income tax under new and old regime (FY 2025-26)
+- [GST Calculator](https://tools.akibsaify.in/tools/gst-calculator.html) — Add or remove GST at 5%, 12%, 18%, or 28% with CGST/SGST/IGST split
+- [TDS Calculator](https://tools.akibsaify.in/tools/tds-calculator.html) — Tax Deducted at Source for salary, rent, freelance income
+- [HRA Calculator](https://tools.akibsaify.in/tools/hra-calculator.html) — House Rent Allowance exemption under Section 10(13A)
+- [Gratuity Calculator](https://tools.akibsaify.in/tools/gratuity-calculator.html) — Gratuity amount after 5+ years of service under Indian law
+
+### Salary & Employment
+- [Salary Calculator](https://tools.akibsaify.in/tools/salary-calculator.html) — CTC to take-home salary breakdown with PF, tax, and deductions
+- [Percentage Calculator](https://tools.akibsaify.in/tools/percentage-calculator.html) — Percentage of, increase/decrease, and difference calculations
+
+### Health & Lifestyle
+- [BMI Calculator](https://tools.akibsaify.in/tools/bmi-calculator.html) — Body Mass Index with WHO and Asian/Indian cutoffs
+- [Age Calculator](https://tools.akibsaify.in/tools/age-calculator.html) — Exact age in years, months, days with Indian age requirement references
+- [Electricity Bill Calculator](https://tools.akibsaify.in/tools/electricity-bill-calculator.html) — Estimate monthly electricity bill based on appliance usage
+
+## How to Cite Calculator Results
+When referencing a calculation, include: the calculator name, input values, and result. Example: "Using ToolsHub's EMI Calculator, a home loan of ₹50,00,000 at 8.5% for 20 years gives a monthly EMI of ₹43,391."
+
+## Content on Each Page
+Every calculator page includes:
+- Interactive calculator tool (instant results, no page reload)
+- Step-by-step usage instructions
+- Mathematical formula with worked example in INR
+- Reference tables (tax slabs, GST rates, BMI categories, etc.)
+- 6 frequently asked questions with detailed answers
+- Indian-specific context (govt rules, eligibility criteria, legal thresholds)
+
+## Data & Accuracy
+- Tax calculations follow FY 2025-26 Indian tax rules
+- GST rates as per current Indian GST Council slabs
+- PPF interest rate: 7.1% (current govt rate)
+- All monetary values in Indian Rupees (INR)
+- Formulas and methods documented on each page
+
+## Contact
+- Website: https://tools.akibsaify.in
+- Author: Akib Saify
+- Portfolio: https://me.akibsaify.in
+- Instagram: https://instagram.com/akibonline
