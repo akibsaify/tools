@@ -196,6 +196,100 @@ a:hover { color: var(--brand-dark); }
   text-decoration: none;
 }
 
+/* ── CROSS-LINK BAR ── */
+.cross-link-bar {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.cross-link-bar a {
+  color: var(--brand-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+.cross-link-bar a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  .cross-link-bar {
+    background: linear-gradient(135deg, #172554 0%, #052e16 100%);
+    border-bottom-color: var(--border);
+    color: var(--text-secondary);
+  }
+
+  .cross-link-bar a {
+    color: var(--brand);
+  }
+}
+
+/* ── DEALS SECTION ── */
+.deals-section {
+  margin-top: 2rem;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.deal-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text);
+  transition: all var(--duration-md) var(--ease);
+}
+
+.deal-card:hover {
+  border-color: var(--success);
+  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.deal-card .deal-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.deal-card .deal-title {
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 3px;
+}
+
+.deal-card .deal-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.deal-card .deal-cta {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
 /* ── BREADCRUMB ── */
 .breadcrumb {
   font-size: 0.8rem;
@@ -995,4 +1089,12 @@ a:hover { color: var(--brand-dark); }
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ── PERFORMANCE: CLS & Rendering ── */
+ins.adsbygoogle { min-height: 100px; }
+
+.site-footer, .faq-section, .related-tools {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 300px;
 }

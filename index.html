@@ -20,6 +20,7 @@
   <meta name="twitter:description" content="Free online calculators for finance, math, health & everyday life. Instant results, no signup.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hjQ.woff2" as="font" type="font/woff2" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/style.css">
   <meta name="google-adsense-account" content="ca-pub-6478161332276600">
@@ -29,20 +30,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "ToolsHub",
-    "url": "https://tools.akibsaify.in",
-    "description": "Free online calculators and utility tools for finance, math, health and everyday life",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://tools.akibsaify.in/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Akib Saify",
-      "url": "https://akibsaify.in"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "ToolsHub",
+        "url": "https://tools.akibsaify.in",
+        "description": "Free online calculators and utility tools for finance, math, health and everyday life",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://tools.akibsaify.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "publisher": { "@id": "#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "#organization",
+        "name": "ToolsHub",
+        "url": "https://tools.akibsaify.in",
+        "description": "Free online calculators for finance, tax, health and everyday life. 100% free, no signup required.",
+        "founder": {
+          "@type": "Person",
+          "name": "Akib Saify",
+          "url": "https://akibsaify.in",
+          "jobTitle": "Creator & Developer",
+          "sameAs": ["https://instagram.com/akibonline", "https://akibsaify.in"]
+        },
+        "sameAs": [
+          "https://deals.akibsaify.in",
+          "https://akibsaify.in",
+          "https://instagram.com/akibonline"
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -54,6 +74,11 @@
       <a href="/pages/about.html">About</a>
     </nav>
   </header>
+
+  <!-- Cross-link Bar -->
+  <div class="cross-link-bar">
+    🔥 Check today's best deals on <a href="https://deals.akibsaify.in/" target="_blank" rel="noopener">DealDrops</a> — Top offers on Electronics, Fashion & more
+  </div>
 
   <section class="hero">
     <h1>Calculate Anything, Instantly</h1>
@@ -206,9 +231,9 @@
   </div>
 
   <!-- AdSense Ad -->
-  <div style="margin:2rem auto;text-align:center;max-width:1080px;padding:0 20px;">
+  <div style="margin:2rem auto;text-align:center;max-width:1080px;padding:0 20px;min-height:100px;">
     <ins class="adsbygoogle"
-         style="display:block"
+         style="display:block;min-height:100px"
          data-ad-client="ca-pub-6478161332276600"
          data-ad-slot="auto"
          data-ad-format="auto"
